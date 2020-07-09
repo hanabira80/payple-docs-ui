@@ -1,0 +1,318 @@
+.v-application .v-markup {
+    align-items: center;
+    box-shadow: none;
+    display: flex;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 16px;
+    background: #2d2d2d;
+    color: #fff;
+}
+.v-application .v-markup.theme--dark {
+    background: #1f1f1f;
+}
+.v-application .v-markup pre,
+.v-application .v-markup code {
+    margin: 0;
+    background: transparent;
+    font-family: "Inconsolata", monospace;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.55;
+}
+.v-application .v-markup code {
+    position: relative;
+    box-shadow: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    word-break: break-word;
+    flex-wrap: wrap;
+    align-items: center;
+    vertical-align: middle;
+    white-space: pre-wrap;
+}
+.v-application .v-markup code:before {
+    display: none;
+}
+.v-application .v-markup__copied {
+    position: absolute;
+    top: 12px;
+    right: 75px;
+}
+.v-application .v-markup__copy,
+.v-application .v-markup__edit {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+}
+.v-application .v-markup__copy {
+    right: 0;
+}
+.v-application .v-markup__edit {
+    right: 36px;
+}
+.v-application .v-markup__edit > a {
+    color: inherit;
+    text-decoration: none;
+}
+.v-application .v-markup a.v-markup__filename {
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 8px 12px 8px 8px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.56);
+}
+.v-application .v-markup:after {
+    position: absolute;
+    right: 10px;
+    transition: opacity 0.2s ease-in;
+    content: attr(data-lang);
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    font-weight: 700;
+    top: 5px;
+}
+.v-application .v-markup:hover .v-markup__copy .v-icon,
+.v-application .v-markup:hover .v-markup__edit .v-icon {
+    opacity: 1;
+}
+.v-application .v-markup:hover .v-markup__copy:after,
+.v-application .v-markup:hover .v-markup__edit:after {
+    opacity: 0;
+}
+.v-application .v-markup .v-markup__copy .v-icon,
+.v-application .v-markup .v-markup__edit .v-icon {
+    color: inherit;
+    position: absolute;
+    right: 0;
+    transition: opacity 0.2s ease-in;
+    font-size: 1.5rem;
+    opacity: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 4;
+}
+.v-application .v-markup code[class*="language-"],
+.v-application .v-markup pre[class*="language-"] {
+    color: #ccc;
+    background: none;
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    font-size: 1rem;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    tab-size: 4;
+    hyphens: none;
+}
+.v-application .v-markup pre[class*="language-"] {
+    padding: 1rem;
+    margin: 0;
+    overflow: auto;
+}
+.v-application .v-markup :not(pre) > code[class*="language-"] {
+    padding: 0.1rem;
+    border-radius: 0.3rem;
+    white-space: normal;
+}
+.v-application .v-markup .token.comment,
+.v-application .v-markup .token.block-comment,
+.v-application .v-markup .token.prolog,
+.v-application .v-markup .token.doctype,
+.v-application .v-markup .token.cdata {
+    color: #999;
+}
+.v-application .v-markup .token.punctuation {
+    color: #ccc;
+}
+.v-application .v-markup .token.tag,
+.v-application .v-markup .token.attr-name,
+.v-application .v-markup .token.namespace,
+.v-application .v-markup .token.deleted {
+    color: #e2777a;
+}
+.v-application .v-markup .token.function-name {
+    color: #6196cc;
+}
+.v-application .v-markup .token.boolean,
+.v-application .v-markup .token.number,
+.v-application .v-markup .token.function {
+    color: #f08d49;
+}
+.v-application .v-markup .token.property,
+.v-application .v-markup .token.class-name,
+.v-application .v-markup .token.constant,
+.v-application .v-markup .token.symbol {
+    color: #f8c555;
+}
+.v-application .v-markup .token.selector,
+.v-application .v-markup .token.important,
+.v-application .v-markup .token.atrule,
+.v-application .v-markup .token.keyword,
+.v-application .v-markup .token.builtin {
+    color: #cc99cd;
+}
+.v-application .v-markup .token.string,
+.v-application .v-markup .token.char,
+.v-application .v-markup .token.attr-value,
+.v-application .v-markup .token.regex,
+.v-application .v-markup .token.variable {
+    color: #7ec699;
+}
+.v-application .v-markup .token.operator,
+.v-application .v-markup .token.entity,
+.v-application .v-markup .token.url {
+    color: #67cdcc;
+}
+.v-application .v-markup .token.important,
+.v-application .v-markup .token.bold {
+    font-weight: bold;
+}
+.v-application .v-markup .token.italic {
+    font-style: italic;
+}
+.v-application .v-markup .token.entity {
+    cursor: help;
+}
+.v-application .v-markup .token.inserted {
+    color: green;
+}
+.component-parameters {
+    font-size: 14px;
+}
+.component-parameters p {
+    margin-bottom: 0;
+}
+.component-parameters .mono {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+}
+.component-parameters .header {
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.8rem;
+}
+.component-parameters .justify {
+    text-align: justify;
+}
+.component-parameters .name {
+    color: #bd4147;
+}
+.example-new .v-tabs {
+    border-bottom: thin solid rgba(0, 0, 0, 0.12) !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+.example-new .v-tabs.theme--dark {
+    border-bottom: thin solid rgba(255, 255, 255, 0.12) !important;
+}
+.sass-var-iterator[data-v-8f94ddc0] {
+    max-height: 800px;
+    overflow-y: scroll;
+}
+.browser-icon--split {
+    position: absolute;
+}
+.browser-icon--split:nth-child(1) {
+    clip: rect(0px 21px 40px 0px);
+}
+.browser-icon--split:nth-child(2) {
+    clip: rect(0px 40px 40px 22px);
+}
+#consulting .v-list-item {
+    height: 32px !important;
+}
+.booking-container.booking-wrapper {
+    width: 100% !important;
+}
+.v-data-iterator--faq p {
+    margin: 0;
+}
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.member h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+[data-v-9b56df62] pre {
+    background: #2d2d2d !important;
+    border-radius: 4px;
+    margin: 16px 0;
+    padding: 16px;
+}
+[data-v-9b56df62] pre code {
+    background: transparent;
+    background-color: unset !important;
+    box-shadow: none !important;
+    color: #ccc !important;
+    font-family: "Inconsolata", monospace;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.55;
+}
+[data-v-9b56df62] .migration-markdown h1,
+[data-v-9b56df62] .migration-markdown h2,
+[data-v-9b56df62] .migration-markdown h3,
+[data-v-9b56df62] .migration-markdown h4,
+[data-v-9b56df62] .migration-markdown h5,
+[data-v-9b56df62] .migration-markdown p,
+[data-v-9b56df62] .migration-markdown pre,
+[data-v-9b56df62] .migration-markdown ul {
+    margin-bottom: 16px !important;
+}
+#why-vuetify p {
+    margin-bottom: 0;
+}
+#why-vuetify #vibrant a {
+    color: white !important;
+    text-decoration: underline;
+}
+#roadmap .v-timeline-item__body p {
+    margin: 0;
+}
+#roadmap .markdown > h3 {
+    margin-bottom: 8px;
+}
+
+#premium-themes .v-card {
+    border-radius: 6px;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+.wf-loading .material-icons {
+    display: none;
+}
+.v-application .markdown code {
+    box-shadow: none;
+    color: #c0341d;
+    background-color: #fbe5e1;
+}
+.v-application .markdown kbd > code {
+    background: transparent;
+    color: inherit;
+}
+
+#create .v-speed-dial {
+    position: absolute;
+}
+
+#create .v-btn--floating {
+    position: relative;
+}
+
+.v-treeview-node__label a {
+    color:blue
+}
