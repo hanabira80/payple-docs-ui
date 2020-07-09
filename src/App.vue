@@ -48,11 +48,11 @@
             </template>
         </v-navigation-drawer>
 
-        <v-content>
+        <v-main>
             <v-container>
                 <router-view></router-view>
             </v-container>
-        </v-content>
+        </v-main>
 
         <v-footer app inset absolute align-center class=" pa-4"> &copy;{{ new Date().getFullYear() }} — <strong>PAYPLE</strong> </v-footer>
     </v-app>
@@ -88,22 +88,23 @@ export default {
                         id: 1 - 1,
                         name: "환경설정",
                         children: [
-                            { id: 1 - 1 - 1, name: "환경설정 개요", to: "/ui/installation" },
-                            { id: 1 - 1 - 2, name: "상황별 가맹점 인증 요청 방식", to: "/ui/auth" },
+                            { id: 1 - 1 - 1, name: "환경설정 개요", to: "/ui/install/outline" },
+                            { id: 1 - 1 - 2, name: "상황별 가맹점 인증 요청 방식", to: "/ui/install/auth" },
                         ],
                     },
                     {
                         id: 1 - 2,
                         name: "API",
                         children: [
-                            { id: 1 - 2 - 0, name: "카드등록", to: "/ui/regist" },
-                            { id: 1 - 2 - 1, name: "결제요청", to: "/ui/pay-request" },
-                            { id: 1 - 2 - 2, name: "결제요청 (월 중복결제 방지)", to: "/ui/regular-once" },
-                            { id: 1 - 2 - 3, name: "승인취소", to: "/ui/pay-cancel" },
-                            { id: 1 - 2 - 4, name: "등록카드 해지", to: "/ui/reg-cancel" },
-                            { id: 1 - 2 - 5, name: "등록카드 조회", to: "/ui/reg-search" },
-                            { id: 1 - 2 - 6, name: "결제결과 조회", to: "/ui/result-search" },
-                            { id: 1 - 2 - 7, name: "정책", to: "/ui/policy" },
+                            { id: 1 - 2 - 0, name: "카드등록", to: "/ui/regist/card" },
+                            { id: 1 - 2 - 1, name: "결제요청", to: "/ui/pay/request" },
+                            { id: 1 - 2 - 2, name: "결제요청 (월 중복결제 방지)", to: "/ui/pay/regular-refuse" },
+                            { id: 1 - 2 - 3, name: "승인취소", to: "/ui/pay/cancel" },
+                            { id: 1 - 2 - 4, name: "등록카드 해지", to: "/ui/regist/cancel" },
+                            { id: 1 - 2 - 5, name: "등록카드 조회", to: "/ui/regist/search" },
+                            { id: 1 - 2 - 6, name: "결제결과 조회", to: "/ui/result/search" },
+                            { id: 1 - 2 - 7, name: "응답코드", to: "/ui/code/response" },
+                            { id: 1 - 2 - 8, name: "정책", to: "/ui/policy" },
                         ],
                     },
                     
@@ -117,7 +118,7 @@ export default {
             {
                 id: 3,
                 name: "샘플코드",
-                to: "/sample-code",
+                to: "/code/sample",
             },
             {
                 id: 4,
