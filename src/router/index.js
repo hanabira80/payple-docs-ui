@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+// import Home from "../views/Home.vue";
 // import notFound from "../components/404.vue";
 
 Vue.use(VueRouter);
@@ -9,8 +9,8 @@ const routes = [
     {
         path: "/",
         name: "Home",
-        component: Home,
         meta: { title: "페이플 UI커스터마이징 결제 연동가이드" },
+        component: () => import("../views/Home.vue"),
     },
     {
         path: "/ui/outline",

@@ -51,6 +51,75 @@
         <v-main>
             <v-container>
                 <router-view></router-view>
+                <v-row class="mb-12">
+                    <v-col col="12" sm="4">
+                        <v-card>
+                            <v-list-item>
+                                <v-list-item-avatar color="pink darken-1">
+                                    <v-icon color="white">
+                                        mdi-frequently-asked-questions
+                                    </v-icon>
+                                </v-list-item-avatar>
+
+                                <v-list-item-content>
+                                    <v-list-item-title class=" mb-2">FAQ</v-list-item-title>
+                                    <v-list-item-subtitle>높은 빈도의 문의를 모아봤어요</v-list-item-subtitle>
+                                </v-list-item-content>
+                                <v-list-item-action>
+                                    <v-btn fab text color="blue accent-4">
+                                        <v-icon>
+                                            mdi-vector-link
+                                        </v-icon>
+                                    </v-btn>
+                                </v-list-item-action>
+                            </v-list-item>
+                        </v-card>
+                    </v-col>
+                    <v-col col="12" sm="4">
+                        <v-card>
+                            <v-list-item>
+                                <v-list-item-avatar color="indigo darken-4">
+                                    <v-icon color="white">
+                                        mdi-git
+                                    </v-icon>
+                                </v-list-item-avatar>
+                                <v-list-item-content>
+                                    <v-list-item-title class=" mb-2">GITHUB</v-list-item-title>
+                                    <v-list-item-subtitle>페이플 오픈 소스에 참여 하세요</v-list-item-subtitle>
+                                </v-list-item-content>
+                                <v-list-item-action>
+                                    <v-btn fab text color="blue accent-4">
+                                        <v-icon>
+                                            mdi-vector-link
+                                        </v-icon>
+                                    </v-btn>
+                                </v-list-item-action>
+                            </v-list-item>
+                        </v-card>
+                    </v-col>
+                    <v-col col="12" sm="4">
+                        <v-card>
+                            <v-list-item>
+                                <v-list-item-avatar color="teal accent-4">
+                                    <v-icon color="white">
+                                        mdi-email-send-outline
+                                    </v-icon>
+                                </v-list-item-avatar>
+                                <v-list-item-content>
+                                    <v-list-item-title class=" mb-2">MAIL</v-list-item-title>
+                                    <v-list-item-subtitle>페이플 개발팀에 문의해보세요</v-list-item-subtitle>
+                                </v-list-item-content>
+                                <v-list-item-action>
+                                    <v-btn fab text color="blue accent-4">
+                                        <v-icon>
+                                            mdi-pencil
+                                        </v-icon>
+                                    </v-btn>
+                                </v-list-item-action>
+                            </v-list-item>
+                        </v-card>
+                    </v-col>
+                </v-row>
             </v-container>
         </v-main>
 
@@ -107,7 +176,6 @@ export default {
                             { id: 1 - 2 - 8, name: "정책", to: "/ui/policy" },
                         ],
                     },
-                    
                 ],
             },
             {
@@ -181,41 +249,41 @@ export default {
 
 <style>
 * {
-    font-family: 'Noto Sans KR', sans-serif !important;
+    font-family: "Noto Sans KR", sans-serif !important;
 }
 table {
     white-space: nowrap;
-    text-align:center;
+    text-align: center;
     word-break: keep-all;
 }
 table td {
-    border: 1px solid rgba(0,0,0,.06);
+    border: 1px solid rgba(0, 0, 0, 0.06);
 }
 table th {
-    border: 1px solid rgba(0,0,0,.06);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-collapse: collapse;
     font-weight: 700;
-    font-size:1rem !important;
+    font-size: 1rem !important;
     text-align: center !important;
 }
 .limit table {
     white-space: normal;
-    width:100%;
+    width: 100%;
 }
 .half-bg--payple {
-    position:relative;
-    display:inline;
+    position: relative;
+    display: inline;
 }
 .half-bg--payple:before {
-    content:'';
+    content: "";
     position: absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    top:60%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 60%;
     background: rgba(120, 82, 232, 0.4);
     z-index: 0;
-    border-radius:4px;
+    border-radius: 4px;
 }
 .white-space-normal {
     white-space: normal;
@@ -224,17 +292,17 @@ table th {
     word-break: keep-all;
 }
 pre {
-    margin:0 !important;
-    padding:0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 code {
-    width:100%;
-    margin:0;
-    padding:0 1rem;
+    width: 100%;
+    margin: 0;
+    padding: 0 1rem;
     font-weight: 400 !important;
 }
 .tree-gutter {
     display: inline-block;
-    width:20px;
+    width: 20px;
 }
 </style>
