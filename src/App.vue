@@ -49,75 +49,82 @@
         </v-navigation-drawer>
 
         <v-main>
-            <v-container>
+            <v-container style="max-width: 1000px;">
                 <router-view></router-view>
-                <v-row class="mb-12">
+                <v-divider class="mb-12"></v-divider>
+                <v-row class="mb-12 pt-12">
                     <v-col col="12" sm="4">
-                        <v-card>
-                            <v-list-item>
-                                <v-list-item-avatar color="pink darken-1">
-                                    <v-icon color="white">
-                                        mdi-frequently-asked-questions
-                                    </v-icon>
-                                </v-list-item-avatar>
+                        <router-link class="no-style-link" to="/faq">
+                            <v-card>
+                                <v-list-item>
+                                    <v-list-item-avatar color="pink darken-1">
+                                        <v-icon color="white">
+                                            mdi-frequently-asked-questions
+                                        </v-icon>
+                                    </v-list-item-avatar>
 
-                                <v-list-item-content>
-                                    <v-list-item-title class=" mb-2">FAQ</v-list-item-title>
-                                    <v-list-item-subtitle>높은 빈도의 문의를 모아봤어요</v-list-item-subtitle>
-                                </v-list-item-content>
-                                <v-list-item-action>
-                                    <v-btn fab text color="blue accent-4">
-                                        <v-icon>
-                                            mdi-vector-link
-                                        </v-icon>
-                                    </v-btn>
-                                </v-list-item-action>
-                            </v-list-item>
-                        </v-card>
+                                    <v-list-item-content>
+                                        <v-list-item-title class=" mb-2">FAQ</v-list-item-title>
+                                        <v-list-item-subtitle>높은 빈도의 문의를 모아봤어요</v-list-item-subtitle>
+                                    </v-list-item-content>
+                                    <!-- <v-list-item-action>
+                                        <v-btn fab text color="blue accent-4">
+                                            <v-icon>
+                                                mdi-vector-link
+                                            </v-icon>
+                                        </v-btn>
+                                    </v-list-item-action> -->
+                                </v-list-item>
+                            </v-card>
+                        </router-link>
                     </v-col>
                     <v-col col="12" sm="4">
-                        <v-card>
-                            <v-list-item>
-                                <v-list-item-avatar color="indigo darken-4">
-                                    <v-icon color="white">
-                                        mdi-git
-                                    </v-icon>
-                                </v-list-item-avatar>
-                                <v-list-item-content>
-                                    <v-list-item-title class=" mb-2">GITHUB</v-list-item-title>
-                                    <v-list-item-subtitle>페이플 오픈 소스에 참여 하세요</v-list-item-subtitle>
-                                </v-list-item-content>
-                                <v-list-item-action>
-                                    <v-btn fab text color="blue accent-4">
-                                        <v-icon>
-                                            mdi-vector-link
+                        <a class="no-style-link" href="https://github.com/PAYPLECORP" target="_blank">
+                            <v-card>
+                                <v-list-item>
+                                    <v-list-item-avatar color="indigo darken-4">
+                                        <v-icon color="white">
+                                            mdi-git
                                         </v-icon>
-                                    </v-btn>
-                                </v-list-item-action>
-                            </v-list-item>
-                        </v-card>
+                                    </v-list-item-avatar>
+                                    <v-list-item-content>
+                                        <v-list-item-title class=" mb-2">GITHUB</v-list-item-title>
+                                        <v-list-item-subtitle>페이플 오픈 소스에 참여 하세요</v-list-item-subtitle>
+                                    </v-list-item-content>
+                                    <!-- <v-list-item-action>
+                                        <v-btn fab text color="blue accent-4">
+                                            <v-icon>
+                                                mdi-vector-link
+                                            </v-icon>
+                                        </v-btn>
+                                    </v-list-item-action> -->
+                                </v-list-item>
+                            </v-card>
+                        </a>
                     </v-col>
                     <v-col col="12" sm="4">
-                        <v-card>
-                            <v-list-item>
-                                <v-list-item-avatar color="teal accent-4">
-                                    <v-icon color="white">
-                                        mdi-email-send-outline
-                                    </v-icon>
-                                </v-list-item-avatar>
-                                <v-list-item-content>
-                                    <v-list-item-title class=" mb-2">MAIL</v-list-item-title>
-                                    <v-list-item-subtitle>페이플 개발팀에 문의해보세요</v-list-item-subtitle>
-                                </v-list-item-content>
-                                <v-list-item-action>
-                                    <v-btn fab text color="blue accent-4">
-                                        <v-icon>
-                                            mdi-pencil
+                        <a class="no-style-link" href="mailto:dev@payple.kr">
+                            <v-card>
+                                <v-list-item>
+                                    <v-list-item-avatar color="teal accent-4">
+                                        <v-icon color="white">
+                                            mdi-email-send-outline
                                         </v-icon>
-                                    </v-btn>
-                                </v-list-item-action>
-                            </v-list-item>
-                        </v-card>
+                                    </v-list-item-avatar>
+                                    <v-list-item-content>
+                                        <v-list-item-title class=" mb-2">MAIL</v-list-item-title>
+                                        <v-list-item-subtitle>페이플 개발팀에 문의해보세요</v-list-item-subtitle>
+                                    </v-list-item-content>
+                                    <!-- <v-list-item-action>
+                                        <v-btn fab text color="blue accent-4">
+                                            <v-icon>
+                                                mdi-pencil
+                                            </v-icon>
+                                        </v-btn>
+                                    </v-list-item-action> -->
+                                </v-list-item>
+                            </v-card>
+                        </a>
                     </v-col>
                 </v-row>
             </v-container>
@@ -146,7 +153,7 @@ export default {
         navi: [
             {
                 id: 1,
-                name: "페이플 UI커스터마이징 결제 연동",
+                name: "UI커스텀 결제",
                 children: [
                     {
                         id: 1 - 0,
@@ -158,7 +165,7 @@ export default {
                         name: "환경설정",
                         children: [
                             { id: 1 - 1 - 1, name: "환경설정 개요", to: "/ui/install/outline" },
-                            { id: 1 - 1 - 2, name: "상황별 가맹점 인증 요청 방식", to: "/ui/install/auth" },
+                            { id: 1 - 1 - 2, name: "상황별 인증 요청 방식", to: "/ui/install/auth" },
                         ],
                     },
                     {
@@ -231,6 +238,7 @@ export default {
 };
 </script>
 
+
 <style scoped>
 .v-treeview a {
     color: rgba(0, 0, 0, 0.87);
@@ -252,9 +260,10 @@ export default {
     font-family: "Noto Sans KR", sans-serif !important;
 }
 table {
-    white-space: nowrap;
+    white-space: normal;
     text-align: center;
     word-break: keep-all;
+    min-width:100%;
 }
 table td {
     border: 1px solid rgba(0, 0, 0, 0.06);
@@ -266,9 +275,19 @@ table th {
     font-size: 1rem !important;
     text-align: center !important;
 }
+@media screen and (min-width: 0px) and (max-width: 720px) {
+    table {
+        white-space: nowrap;
+        text-align: center;
+        word-break: keep-all;
+    }
+}
 .limit table {
     white-space: normal;
-    width: 100%;
+    max-width: 100%;
+}
+.temp_table.no_th th{
+    display:none !important;
 }
 .half-bg--payple {
     position: relative;
@@ -285,11 +304,29 @@ table th {
     z-index: 0;
     border-radius: 4px;
 }
+.half-bg--tooltip {
+    position: relative;
+    display: inline;
+}
+.half-bg--tooltip:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 60%;
+    background: rgba(41, 98, 255, 0.4);
+    z-index: 0;
+    border-radius: 4px;
+}
 .white-space-normal {
-    white-space: normal;
+    white-space: normal !important;
 }
 .word-break-keep-all {
     word-break: keep-all;
+}
+.word-break-break-all {
+    word-break: break-all;
 }
 pre {
     margin: 0 !important;
@@ -304,5 +341,12 @@ code {
 .tree-gutter {
     display: inline-block;
     width: 20px;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.no-style-link {
+    color: inherit !important;
+    text-decoration: none !important;
 }
 </style>

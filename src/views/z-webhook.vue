@@ -36,9 +36,9 @@
                 웹훅 URL 설정 방법
             </h2>
             <blockquote class="mb-12 blockquote body-1">
-                1) 가맹점 관리자 페이지 > 기본정보 > 결제 결과 수신 URL (가맹점 미수신 결과 확인) 입력<br/>
-                <span class="tree-gutter"></span>ex) https://www.aaa.com/PAYhook.php<br/><br/>
-                2) 가맹점 관리자 페이지 > 기본정보 > 계좌(카드)해지결과 수식 URL 입력 <br/>
+                1) 가맹점 관리자 페이지 > 기본정보 > 결제 결과 수신 URL (가맹점 미수신 결과 확인) 입력<br />
+                <span class="tree-gutter"></span>ex) https://www.aaa.com/PAYhook.php<br /><br />
+                2) 가맹점 관리자 페이지 > 기본정보 > 계좌(카드)해지결과 수식 URL 입력 <br />
                 <span class="tree-gutter"></span>ex) https://www.aaa.com/cancelhook.php
             </blockquote>
 
@@ -73,9 +73,6 @@
                 </Prism>
             </v-card>
         </article>
-        <v-divider class="mb-12"></v-divider>
-
-        
     </div>
 </template>
 
@@ -93,6 +90,7 @@ export default {
     },
     data() {
         return {
+            toolTipShow: false,
             subNavi: [
                 {
                     text: "홈",
@@ -100,48 +98,39 @@ export default {
                     to: "/",
                 },
                 {
-                    text: "카드결제",
-                    disabled: false,
-                    to: "/card/outline",
-                },
-                {
-                    text: "최초결제",
-                    disabled: true,
-                },
-                {
-                    text: "결제 창 호출",
+                    text: "웹훅(Webhook) URL 설정",
                     disabled: true,
                 },
             ],
             code_1_1: `
 {
-"PCD_PAY_RST" => "success",
-"PCD_PAY_MSG" => “결제결과 리턴 메시지”,
-"PCD_CST_ID" => “가맹점 ID”,
-"PCD_PAY_OID" => “주문번호”,
-"PCD_PAY_TYPE" => “card”,
-"PCD_PAYER_NO" => “회원번호”,
-"PCD_PAYER_ID" => “계좌(카드)등록후 리턴받은 빌링키”,
-"PCD_PAY_YEAR" => “월 중복결제 년”,
-"PCD_PAY_MONTH" => “월 중복결제 월”,
-"PCD_PAY_GOODS" => “상품명”,
-"PCD_PAY_TOTAL" => “상품금액”,
-"PCD_REGULER_FLAG" => “월 중복결제 방지 사용여부”,
-"PCD_REFUND_TOTAL" => “환불금액”,
-"PCD_REFUND_TIME" => “환불시간”,
-"PCD_PAYCANCEL_FLAG" => 'Y'
+    "PCD_PAY_RST" => "success",
+    "PCD_PAY_MSG" => “결제결과 리턴 메시지”,
+    "PCD_CST_ID" => “가맹점 ID”,
+    "PCD_PAY_OID" => “주문번호”,
+    "PCD_PAY_TYPE" => “card”,
+    "PCD_PAYER_NO" => “회원번호”,
+    "PCD_PAYER_ID" => “계좌(카드)등록후 리턴받은 빌링키”,
+    "PCD_PAY_YEAR" => “월 중복결제 년”,
+    "PCD_PAY_MONTH" => “월 중복결제 월”,
+    "PCD_PAY_GOODS" => “상품명”,
+    "PCD_PAY_TOTAL" => “상품금액”,
+    "PCD_REGULER_FLAG" => “월 중복결제 방지 사용여부”,
+    "PCD_REFUND_TOTAL" => “환불금액”,
+    "PCD_REFUND_TIME" => “환불시간”,
+    "PCD_PAYCANCEL_FLAG" => 'Y'
 }
 `,
             code_2_1: `
 {
-"PCD_CST_ID" : “가맹점 ID”,
-"PCD_PAY_WORK" : "PUSERDEL",
-"PCD_PAY_RST" : "success",
-"PCD_PAY_MSG" : "2008 : 고객요청으로 자동이체 해지되었음(업체해지)",
-"PCD_PAY_TYPE" : “card”,
-"PCD_PAYER_ID" : “계좌(카드) 등록시 리턴받은 빌링키”,
-"PCD_PAYER_NAME" : “이름”,
-"PCD_PAYER_HP" : “결제고객 핸드폰번호”
+    "PCD_CST_ID" : “가맹점 ID”,
+    "PCD_PAY_WORK" : "PUSERDEL",
+    "PCD_PAY_RST" : "success",
+    "PCD_PAY_MSG" : "2008 : 고객요청으로 자동이체 해지되었음(업체해지)",
+    "PCD_PAY_TYPE" : “card”,
+    "PCD_PAYER_ID" : “계좌(카드) 등록시 리턴받은 빌링키”,
+    "PCD_PAYER_NAME" : “이름”,
+    "PCD_PAYER_HP" : “결제고객 핸드폰번호”
 }	
 `,
         };

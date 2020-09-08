@@ -10,12 +10,12 @@
 
         <article class="mb-12">
             <blockquote class="mb-12 blockquote body-1">
-                일반적인 가맹점은 결제요청시 3-3. 결제 요청(default) API를 사용하나 월1회, 단 한차례만 결제가 나야하는 서비스를 지원하기 위해 페이플에서
-                등록카드(빌링키) 당 월 1회를 초과하는 결제시도를 차단하게 됩니다.
+                하나의 빌링키(PCD_PAYER_ID)에서 월1회, 단 한차례만 결제가 나야하는 서비스를 위한 API며, <br/>
+                페이플에서 등록카드(빌링키) 당 월 1회를 초과하는 결제시도를 차단합니다.
             </blockquote>
 
             <v-alert border="left" colored-border type="error" elevation="2" class="mx-4">
-                결제요청을 위한 선행단계로 가맹점 인증 단계를 거쳐야 합니다. 해당 내용은 이곳에서 확인하실 수 있습니다.
+                결제요청을 위한 선행단계로 가맹점 인증 단계를 거쳐야 합니다. 해당 내용은 <router-link to="/ui/install/auth">이곳</router-link>에서 확인하실 수 있습니다.
             </v-alert>
 
             <h3 class="pl-4">
@@ -57,7 +57,7 @@
                             <td colspan="1" rowspan="1">
                                 255
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <td colspan="1" rowspan="1" class="white-space-normal word-break-break-all">
                                 UFVNNVZpZk4reWo5UFRualUwcGV4dz09
                             </td>
                             <td colspan="1" rowspan="1">
@@ -77,7 +77,7 @@
                             <td colspan="1" rowspan="1">
                                 255
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <td colspan="1" rowspan="1" class="white-space-normal word-break-break-all">
                                 T3JzRkp5L1FTcEFDa1FQdHo5Um1UZz09
                             </td>
                             <td colspan="1" rowspan="1">
@@ -97,7 +97,7 @@
                             <td colspan="1" rowspan="1">
                                 255
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <td colspan="1" rowspan="1" class="white-space-normal word-break-break-all">
                                 a688ccb3555c25cd722483f03e23065c3d0251701ad6da895eb2d830bc06e3
                             </td>
                             <td colspan="1" rowspan="1">
@@ -137,7 +137,7 @@
                             <td colspan="1" rowspan="1">
                                 255
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <td colspan="1" rowspan="1" class="white-space-normal word-break-break-all">
                                 d0toSS9sT084bVJSNThScnFXQm9Gdz09
                             </td>
                             <td colspan="1" rowspan="1">
@@ -153,7 +153,7 @@
                                 Number
                             </td>
                             <td colspan="1" rowspan="1">
-                                255
+                                20
                             </td>
                             <td colspan="1" rowspan="1">
                                 1234
@@ -266,14 +266,14 @@
                                 Number
                             </td>
                             <td colspan="1" rowspan="1">
-                                20
+                                11
                             </td>
                             <td colspan="1" rowspan="1">
                                 10
                             </td>
                             <td colspan="1" rowspan="1">
-                                복합과세(과세+면세) 주문건에 필요한 금액이며 가맹점에서 전송한 값을 부가세로 설정합니다.과세 또는 비과세의 경우 사용하지
-                                않습니다.
+                                복합과세(과세+면세) 주문건에 필요한 금액이며 가맹점에서 전송한 값을 부가세로 설정합니다.<br/>
+                                과세 또는 비과세의 경우 사용하지 않습니다.
                             </td>
                         </tr>
                         <tr>
@@ -546,7 +546,7 @@
                                 Number
                             </td>
                             <td colspan="1" rowspan="1">
-                                255
+                                20
                             </td>
                             <td colspan="1" rowspan="1">
                                 2324
@@ -568,7 +568,7 @@
                             <td colspan="1" rowspan="1">
                                 255
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <td colspan="1" rowspan="1" class="white-space-normal word-break-break-all">
                                 d0toSS9sT084bVJSNThScnFXQm9Gdz09
                             </td>
                             <td colspan="1" rowspan="1">
@@ -584,7 +584,7 @@
                                 String
                             </td>
                             <td colspan="1" rowspan="1">
-                                255
+                                100
                             </td>
                             <td colspan="1" rowspan="1">
                                 help@payple.kr
@@ -660,14 +660,14 @@
                                 Number
                             </td>
                             <td colspan="1" rowspan="1">
-                                20
+                                11
                             </td>
                             <td colspan="1" rowspan="1">
                                 10
                             </td>
                             <td colspan="1" rowspan="1">
-                                복합과세(과세+면세) 주문건에 필요한 금액이며 가맹점에서 전송한 값을 부가세로 설정합니다.과세 또는 비과세의 경우 사용하지
-                                않습니다.
+                                복합과세(과세+면세) 주문건에 필요한 금액이며 가맹점에서 전송한 값을 부가세로 설정합니다.<br/>
+                                과세 또는 비과세의 경우 사용하지 않습니다.
                             </td>
                         </tr>
                         <tr>
@@ -783,7 +783,7 @@
                             <td colspan="1" rowspan="1">
                                 1024
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <td colspan="1" rowspan="1" class="white-space-normal word-break-break-all">
                                 https://www.danalpay.com/receipt/creditcard/view.aspx?dataType=receipt&amp;cpid=9810030929&amp;data=4UXGrKqvqJlmnhA3i6%2F2Ydp5kFEN8GayK3pIcOTDoFVQcl8J7RWZnLTWaHhMCaQC
                             </td>
                             <td colspan="1" rowspan="1">
@@ -932,16 +932,11 @@ export default {
                     to: "/",
                 },
                 {
-                    text: "카드결제",
-                    disabled: false,
-                    to: "/card/outline",
-                },
-                {
-                    text: "최초결제",
+                    text: "API",
                     disabled: true,
                 },
                 {
-                    text: "결제 창 호출",
+                    text: "결제요청(월 중복결제 방지)",
                     disabled: true,
                 },
             ],

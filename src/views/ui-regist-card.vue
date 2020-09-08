@@ -13,13 +13,18 @@
                 빌링키
             </h2>
             <blockquote class="mb-12 blockquote body-1">
-                민감한 개인/금융정보인 카드정보를 교환하는 경우 보안상 문제가 발생할 수 있습니다. 이 문제를 예방하기 위해서 페이플에서는 카드정보와 매칭되는
-                고유식별정보를 암호화한 키값을 생성하여 가맹점에 제공합니다. 이 암호화된 키값을 빌링키(PCD_PAYER_ID)라고 하며, 이 프로세스를 ‘카드 등록’이라고
-                합니다. 빌링키는 설사 복호화되더라도 카드정보를 알 수없어 안전합니다. API결제방식에서는 이 빌링키가 필수적으로 사용됩니다. 즉 결제요청을 하기
-                위해서는 가맹점에서 최초로 페이플에 고객의 카드정보를 제공하여야 하며, 페이플에서는 이 정보를 카드사에 제공하여 빌링키로 변환하여 가맹점에
-                빌링키를 전달합니다. 이후 결제부터는 가맹점에서 빌링키를 페이플에 전달하여 처리하게 됩니다. 공식문서에 나와있는 빌링키 등록 및 결제요청
-                방식(AUTH / PAY / CERT)은 이곳에서 사용하지 않고 AUTHREG를 사용합니다. 페이플 결제창을 통해 빌링키(payer_id)를 생성하는 것이 아니라 가맹점이
-                커스터마이징한 화면단에서 페이플 서버로 API를 통해 등록하기 때문입니다.
+                민감한 개인/금융정보인 카드정보를 교환하는 경우 보안상 문제가 발생할 수 있습니다. <br/>
+                이 문제를 예방하기 위해서 페이플에서는 카드정보와 매칭되는 고유식별정보를 암호화한 키값을 생성하여 가맹점에 제공합니다. <br/>
+                이 암호화된 키값을 빌링키(PCD_PAYER_ID)라고 하며, 이 프로세스를 ‘카드 등록’이라고 합니다. <br/><br/>
+                
+                빌링키는 설사 복호화되더라도 카드정보를 알 수없어 안전합니다. <br/>
+                API결제방식에서는 이 빌링키가 필수적으로 사용됩니다. <br/>
+                즉 결제요청을 하기 위해서는 가맹점에서 최초로 페이플에 고객의 카드정보를 제공하여야 하며, <br/>
+                페이플에서는 이 정보를 카드사에 제공하여 빌링키로 변환하여 가맹점에 빌링키를 전달합니다. <br/><br/>
+                
+                이후 결제부터는 가맹점에서 빌링키를 페이플에 전달하여 처리하게 됩니다. <br/>
+                공식문서에 나와있는 <a href="https://docs.payple.kr/card/pay/outline" target="_blank">빌링키 등록 및 결제요청 방식(AUTH / PAY / CERT)</a>은 이곳에서 사용하지 않고 AUTHREG를 사용합니다. <br/>
+                페이플 결제창을 통해 빌링키(payer_id)를 생성하는 것이 아니라 가맹점이 커스터마이징한 화면단에서 페이플 서버로 API를 통해 등록하기 때문입니다.
             </blockquote>
 
             <v-card max-width="1000" raised class="pa-2 ma-4 mb-12">
@@ -27,7 +32,7 @@
             </v-card>
 
             <v-alert border="left" colored-border type="error" elevation="2" class="mx-4">
-                결제요청을 위한 선행단계로 가맹점 인증 단계를 거쳐야 합니다. 해당 내용은 이곳에서 확인하실 수 있습니다.
+                결제요청을 위한 선행단계로 가맹점 인증 단계를 거쳐야 합니다. 해당 내용은 <router-link to="/ui/install/auth">이곳</router-link>에서 확인하실 수 있습니다.
             </v-alert>
 
             <h3 class="pl-4">
@@ -69,7 +74,7 @@
                             <td colspan="1" rowspan="1">
                                 O
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <td colspan="1" rowspan="1" class="white-space-normal word-break-break-all">
                                 UFVNNVZpZk4reWo5UFRualUwcGV4dz09
                             </td>
                             <td colspan="1" rowspan="1">
@@ -89,7 +94,7 @@
                             <td colspan="1" rowspan="1">
                                 O
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <td colspan="1" rowspan="1" class="white-space-normal word-break-break-all">
                                 T3JzRkp5L1FTcEFDa1FQdHo5Um1UZz09
                             </td>
                             <td colspan="1" rowspan="1">
@@ -109,7 +114,7 @@
                             <td colspan="1" rowspan="1">
                                 O
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <td colspan="1" rowspan="1" class="white-space-normal word-break-break-all">
                                 a688ccb3555c25cd722483f03e23065c3d0251701ad6da895eb2d830bc06e3
                             </td>
                             <td colspan="1" rowspan="1">
@@ -164,7 +169,7 @@
                                 Number
                             </td>
                             <td colspan="1" rowspan="1">
-                                255
+                                20
                             </td>
                             <td colspan="1" rowspan="1"></td>
                             <td colspan="1" rowspan="1">
@@ -189,7 +194,8 @@
                                 홍길동
                             </td>
                             <td colspan="1" rowspan="1">
-                                결제고객 이름 *특정제휴카드의 경우 카드소유주의 실명을 인증하며, 실패할 경우 승인이 거절됩니다..
+                                결제고객 이름 *특정제휴카드의 경우 카드소유주의 실명을 인증하며,<br/>
+                                실패할 경우 승인이 거절됩니다.
                             </td>
                         </tr>
                         <tr>
@@ -238,7 +244,7 @@
                                 String
                             </td>
                             <td colspan="1" rowspan="1">
-                                255
+                                100
                             </td>
                             <td colspan="1" rowspan="1"></td>
                             <td colspan="1" rowspan="1">
@@ -265,7 +271,8 @@
                                 1111222233334444
                             </td>
                             <td colspan="1" rowspan="1">
-                                카드번호 - 16자리 가 안되는 경우도 번호만 그대로 입력 ex) 11112222333344
+                                카드번호 - 16자리 가 안되는 경우도 번호만 그대로 입력 <br/>
+                                ex) 11112222333344
                             </td>
                         </tr>
                         <tr>
@@ -328,7 +335,7 @@
                                 카드 비밀번호 앞 2자리
                             </td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td colspan="1" rowspan="1">
                                 PCD_REGULER_FLAG
                             </td>
@@ -347,7 +354,7 @@
                             <td colspan="1" rowspan="1">
                                 ‘Y’ 고정
                             </td>
-                        </tr>
+                        </tr> -->
                     </tbody>
                 </v-simple-table>
             </v-card>
@@ -461,7 +468,7 @@
                                 String
                             </td>
                             <td colspan="1" rowspan="1">
-                                8
+                                255
                             </td>
                             <td colspan="1" rowspan="1">
                                 O
@@ -526,7 +533,7 @@
                             <td colspan="1" rowspan="1">
                                 O
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <td colspan="1" rowspan="1" class="white-space-normal word-break-break-all">
                                 d0toSS9sT084bVJSNThScnFXQm9Gdz09
                             </td>
                             <td colspan="1" rowspan="1">
@@ -541,7 +548,7 @@
                                 Number
                             </td>
                             <td colspan="1" rowspan="1">
-                                255
+                                20
                             </td>
                             <td colspan="1" rowspan="1"></td>
                             <td colspan="1" rowspan="1">
@@ -595,7 +602,7 @@
                                 String
                             </td>
                             <td colspan="1" rowspan="1">
-                                255
+                                100
                             </td>
                             <td colspan="1" rowspan="1"></td>
                             <td colspan="1" rowspan="1">
@@ -645,7 +652,7 @@
                                 카드번호(중간 8자리 * 처리)
                             </td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td colspan="1" rowspan="1">
                                 PCD_REGULER_FLAG
                             </td>
@@ -664,7 +671,7 @@
                             <td colspan="1" rowspan="1">
                                 ‘Y’ - 고정값
                             </td>
-                        </tr>
+                        </tr> -->
                     </tbody>
                 </v-simple-table>
             </v-card>
@@ -711,16 +718,11 @@ export default {
                     to: "/",
                 },
                 {
-                    text: "카드결제",
-                    disabled: false,
-                    to: "/card/outline",
-                },
-                {
-                    text: "최초결제",
+                    text: "API",
                     disabled: true,
                 },
                 {
-                    text: "결제 창 호출",
+                    text: "카드등록",
                     disabled: true,
                 },
             ],
@@ -745,7 +747,6 @@ Cache-Control: no-cache
   "PCD_PAY_CARDEXYEAR" : "23",
   "PCD_PAY_CARDEXMONTH" : "03",
   "PCD_PAY_CARDPW" : "33",
-  "PCD_REGULER_FLAG" : "Y"	
 }
 `,
             code_1_2: `
@@ -772,7 +773,6 @@ node
   "PCD_PAYER_EMAIL" : "help@payple.kr",
   "PCD_PAY_CARDNAME" : "BC 카드",
   "PCD_PAY_CARDNUM" : "1111********4444",
-  "PCD_REGULER_FLAG" => "Y"
 }
 `,
         };

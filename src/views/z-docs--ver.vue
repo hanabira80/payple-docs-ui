@@ -75,7 +75,7 @@
         </article>
         <v-divider class="mb-12"></v-divider> -->
 
-        <v-expansion-panels multiple focusable hover inset>
+        <v-expansion-panels multiple focusable hover inset class="mb-12">
             <v-expansion-panel>
                 <v-expansion-panel-header>
                     <v-list-item>
@@ -86,11 +86,11 @@
                         </v-list-item-avatar>
 
                         <v-list-item-content>
-                            <v-list-item-title>간편/정기 결제 개념 변경</v-list-item-title>
-                            <v-list-item-subtitle>2020.06.17</v-list-item-subtitle>
+                            <v-list-item-title class="white-space-normal">간편/정기 결제 개념 변경</v-list-item-title>
+                            <v-list-item-subtitle>2020.08</v-list-item-subtitle>
                         </v-list-item-content>
                         <v-list-item-action>
-                            <v-list-item-title>VER 2.1</v-list-item-title>
+                            <v-list-item-title>VER 1.0.1</v-list-item-title>
                         </v-list-item-action>
                     </v-list-item>
                 </v-expansion-panel-header>
@@ -152,10 +152,12 @@
                                         요약
                                     </td>
                                     <td colspan="1" rowspan="1">
-                                        빌링키를 발급받고 매번 사용자의 결제요청(비밀번호 입력)에 의해 결제를 내는 방식입니다.
+                                        페이플 결제창을 통해 빌링키를 발급받고,<br/>
+                                        페이플의 결제창에서 비밀번호 인증을 통해 결제를 내는 방식입니다.
                                     </td>
                                     <td colspan="1" rowspan="1">
-                                        빌링키를 발급받고 매번 사용자의 동의를 받을 필요 없이 REST방식으로 결제를 내는 방식을 말합니다.
+                                        기본적으로 PCD_SIMPLE_FLAG를 사용하지만,<br/>
+                                        월 중복결제를 방지하고 싶은 경우 PCD_REGULER_FLAG를 사용합니다. 
                                     </td>
                                     <td colspan="1" rowspan="1">
                                         *PCD_REGULER_FLAG를 사용하는 결제방식<br/>
@@ -179,16 +181,16 @@
                         </v-list-item-avatar>
 
                         <v-list-item-content>
-                            <v-list-item-title>페이플 연동 가이드 개편</v-list-item-title>
-                            <v-list-item-subtitle>2020.06.17</v-list-item-subtitle>
+                            <v-list-item-title class="white-space-normal">페이플 연동 가이드 개편</v-list-item-title>
+                            <v-list-item-subtitle>2020.08</v-list-item-subtitle>
                         </v-list-item-content>
                         <v-list-item-action>
-                            <v-list-item-title>VER 2.0</v-list-item-title>
+                            <v-list-item-title>VER 1.0.0</v-list-item-title>
                         </v-list-item-action>
                     </v-list-item>
                 </v-expansion-panel-header>
                 <v-expansion-panel-content class="pt-4 px-6">
-                    페이플 연동 가이드가 2.0으로 개편되었습니다.<br />
+                    페이플 연동 가이드가 개편되었습니다.<br />
                     기존의 UI 및 이미지 변경 되었으며,<br />
                     추가된 서비스 내용이 보강되었습니다.
                 </v-expansion-panel-content>
@@ -204,16 +206,18 @@
                         </v-list-item-avatar>
 
                         <v-list-item-content>
-                            <v-list-item-title>기존 페이플 연동가이드</v-list-item-title>
-                            <v-list-item-subtitle>2020.06.17</v-list-item-subtitle>
+                            <v-list-item-title class="white-space-normal">기존 페이플 연동가이드</v-list-item-title>
+                            <!-- <v-list-item-subtitle>2020.06.17</v-list-item-subtitle> -->
                         </v-list-item-content>
-                        <v-list-item-action>
+                        <!-- <v-list-item-action>
                             <v-list-item-title>VER 1.0</v-list-item-title>
-                        </v-list-item-action>
+                        </v-list-item-action> -->
                     </v-list-item>
                 </v-expansion-panel-header>
                 <v-expansion-panel-content class="pt-4 px-6">
-                    <p class="c66"><span class="c35 c1 c21">1.0 버전의 문서를 확인 하실 수 있습니다.</span></p>
+                    <p class="c66">
+                        <span class="c35 c1 c21">기존 버전의 문서를 확인하실 수 있습니다.</span>
+                    </p>
                     <p class="c66">
                         <span>(카드) &gt; </span
                         ><span class="c187"
@@ -233,8 +237,6 @@
                 </v-expansion-panel-content>
             </v-expansion-panel>
         </v-expansion-panels>
-        <v-divider class="my-12"></v-divider>
-
         
     </div>
 </template>
@@ -253,6 +255,7 @@ export default {
     },
     data() {
         return {
+            toolTipShow: false,
             subNavi: [
                 {
                     text: "홈",
@@ -260,16 +263,7 @@ export default {
                     to: "/",
                 },
                 {
-                    text: "카드결제",
-                    disabled: false,
-                    to: "/card/outline",
-                },
-                {
-                    text: "최초결제",
-                    disabled: true,
-                },
-                {
-                    text: "결제 창 호출",
+                    text: "문서 버전 관리",
                     disabled: true,
                 },
             ],

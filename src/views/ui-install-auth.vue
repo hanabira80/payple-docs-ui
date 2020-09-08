@@ -87,7 +87,7 @@
                                 String
                             </td>
                             <td colspan="1" rowspan="1">
-                                4
+                                20
                             </td>
                             <td colspan="1" rowspan="1">
                                 O
@@ -123,77 +123,105 @@
                 샘플코드
             </h3>
 
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+            <v-tabs background-color="indigo" grow dark>
+                <v-tab color="purple darken-1">
+                    <div class=" font-weight-bold">
                         요청예시
                     </div>
-                </div>
-
-                <Prism language="javascript">
-                    {{ code_1_1 }}
-                </Prism>
-            </v-card>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+                </v-tab>
+                <v-tab>
+                    <div class=" font-weight-bold">
                         PHP 샘플코드
                     </div>
-
-                    <div class="ml-auto">
-                        <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-php" target="_blank">
-                            <v-icon left>
-                                mdi-gitlab
-                            </v-icon>
-                            Github
-                        </v-btn>
-                    </div>
-                </div>
-                <Prism language="php">
-                    {{ code_1_2 }}
-                </Prism>
-            </v-card>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+                </v-tab>
+                <v-tab>
+                    <div class="font-weight-bold">
                         JAVA 샘플코드
                     </div>
-
-                    <div class="ml-auto">
-                        <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-java" target="_blank">
-                            <v-icon left>
-                                mdi-gitlab
-                            </v-icon>
-                            Github
-                        </v-btn>
-                    </div>
-                </div>
-                <Prism language="javascript">
-                    {{ code_1_3 }}
-                </Prism>
-            </v-card>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+                </v-tab>
+                <v-tab>
+                    <div class="font-weight-bold">
                         Node 샘플코드
                     </div>
+                </v-tab>
 
-                    <div class="ml-auto">
-                        <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-nodeJS" target="_blank">
-                            <v-icon left>
-                                mdi-gitlab
-                            </v-icon>
-                            Github
-                        </v-btn>
-                    </div>
-                </div>
-                <Prism language="javascript">
-                    {{ code_1_4 }}
-                </Prism>
-            </v-card>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                요청예시
+                            </div>
+                        </div>
+
+                        <Prism language="javascript">
+                            {{ code_1_1 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                PHP 샘플코드
+                            </div>
+
+                            <div class="ml-auto">
+                                <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-php" target="_blank">
+                                    <v-icon left>
+                                        mdi-gitlab
+                                    </v-icon>
+                                    Github
+                                </v-btn>
+                            </div>
+                        </div>
+                        <Prism language="php">
+                            {{ code_1_2 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                JAVA 샘플코드
+                            </div>
+
+                            <div class="ml-auto">
+                                <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-java" target="_blank">
+                                    <v-icon left>
+                                        mdi-gitlab
+                                    </v-icon>
+                                    Github
+                                </v-btn>
+                            </div>
+                        </div>
+                        <Prism language="javascript">
+                            {{ code_1_3 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                Node 샘플코드
+                            </div>
+
+                            <div class="ml-auto">
+                                <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-nodeJS" target="_blank">
+                                    <v-icon left>
+                                        mdi-gitlab
+                                    </v-icon>
+                                    Github
+                                </v-btn>
+                            </div>
+                        </div>
+                        <Prism language="javascript">
+                            {{ code_1_4 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+            </v-tabs>
 
             <v-alert border="left" colored-border type="error" elevation="2" class="mx-4">
                 간편결제에서 월 중복결제 방지기능 사용시에도 가맹점 인증 요청 형식은 변하지 않습니다.
@@ -205,6 +233,7 @@
             <h2 class="">
                 결제요청 (default) API의 가맹점 인증 요청
             </h2>
+
             <v-card class="temp_table ma-4 mb-12">
                 <v-simple-table class="table-hover-disable">
                     <tbody>
@@ -312,77 +341,105 @@
                 샘플코드
             </h3>
 
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+            <v-tabs background-color="indigo" grow dark>
+                <v-tab color="purple darken-1">
+                    <div class=" font-weight-bold">
                         요청예시
                     </div>
-                </div>
-
-                <Prism language="javascript">
-                    {{ code_2_1 }}
-                </Prism>
-            </v-card>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+                </v-tab>
+                <v-tab>
+                    <div class=" font-weight-bold">
                         PHP 샘플코드
                     </div>
-
-                    <div class="ml-auto">
-                        <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-php" target="_blank">
-                            <v-icon left>
-                                mdi-gitlab
-                            </v-icon>
-                            Github
-                        </v-btn>
-                    </div>
-                </div>
-                <Prism language="php">
-                    {{ code_2_2 }}
-                </Prism>
-            </v-card>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+                </v-tab>
+                <v-tab>
+                    <div class="font-weight-bold">
                         JAVA 샘플코드
                     </div>
-
-                    <div class="ml-auto">
-                        <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-java" target="_blank">
-                            <v-icon left>
-                                mdi-gitlab
-                            </v-icon>
-                            Github
-                        </v-btn>
-                    </div>
-                </div>
-                <Prism language="javascript">
-                    {{ code_2_3 }}
-                </Prism>
-            </v-card>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+                </v-tab>
+                <v-tab>
+                    <div class="font-weight-bold">
                         Node 샘플코드
                     </div>
+                </v-tab>
 
-                    <div class="ml-auto">
-                        <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-nodeJS" target="_blank">
-                            <v-icon left>
-                                mdi-gitlab
-                            </v-icon>
-                            Github
-                        </v-btn>
-                    </div>
-                </div>
-                <Prism language="javascript">
-                    {{ code_2_4 }}
-                </Prism>
-            </v-card>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                요청예시
+                            </div>
+                        </div>
+
+                        <Prism language="javascript">
+                            {{ code_2_1 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                PHP 샘플코드
+                            </div>
+
+                            <div class="ml-auto">
+                                <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-php" target="_blank">
+                                    <v-icon left>
+                                        mdi-gitlab
+                                    </v-icon>
+                                    Github
+                                </v-btn>
+                            </div>
+                        </div>
+                        <Prism language="php">
+                            {{ code_2_2 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                JAVA 샘플코드
+                            </div>
+
+                            <div class="ml-auto">
+                                <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-java" target="_blank">
+                                    <v-icon left>
+                                        mdi-gitlab
+                                    </v-icon>
+                                    Github
+                                </v-btn>
+                            </div>
+                        </div>
+                        <Prism language="javascript">
+                            {{ code_2_3 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                Node 샘플코드
+                            </div>
+
+                            <div class="ml-auto">
+                                <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-nodeJS" target="_blank">
+                                    <v-icon left>
+                                        mdi-gitlab
+                                    </v-icon>
+                                    Github
+                                </v-btn>
+                            </div>
+                        </div>
+                        <Prism language="javascript">
+                            {{ code_2_4 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+            </v-tabs>
         </article>
         <v-divider class="mb-12"></v-divider>
 
@@ -461,7 +518,7 @@
                                 String
                             </td>
                             <td colspan="1" rowspan="1">
-                                4
+                                20
                             </td>
                             <td colspan="1" rowspan="1">
                                 O
@@ -496,78 +553,105 @@
             <h3 class="pl-4">
                 샘플코드
             </h3>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+            <v-tabs background-color="indigo" grow dark>
+                <v-tab color="purple darken-1">
+                    <div class=" font-weight-bold">
                         요청예시
                     </div>
-                </div>
-
-                <Prism language="javascript">
-                    {{ code_3_1 }}
-                </Prism>
-            </v-card>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+                </v-tab>
+                <v-tab>
+                    <div class=" font-weight-bold">
                         PHP 샘플코드
                     </div>
-
-                    <div class="ml-auto">
-                        <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-php" target="_blank">
-                            <v-icon left>
-                                mdi-gitlab
-                            </v-icon>
-                            Github
-                        </v-btn>
-                    </div>
-                </div>
-                <Prism language="php">
-                    {{ code_3_2 }}
-                </Prism>
-            </v-card>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+                </v-tab>
+                <v-tab>
+                    <div class="font-weight-bold">
                         JAVA 샘플코드
                     </div>
-
-                    <div class="ml-auto">
-                        <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-java" target="_blank">
-                            <v-icon left>
-                                mdi-gitlab
-                            </v-icon>
-                            Github
-                        </v-btn>
-                    </div>
-                </div>
-                <Prism language="javascript">
-                    {{ code_3_3 }}
-                </Prism>
-            </v-card>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+                </v-tab>
+                <v-tab>
+                    <div class="font-weight-bold">
                         Node 샘플코드
                     </div>
+                </v-tab>
 
-                    <div class="ml-auto">
-                        <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-nodeJS" target="_blank">
-                            <v-icon left>
-                                mdi-gitlab
-                            </v-icon>
-                            Github
-                        </v-btn>
-                    </div>
-                </div>
-                <Prism language="javascript">
-                    {{ code_3_4 }}
-                </Prism>
-            </v-card>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                요청예시
+                            </div>
+                        </div>
+
+                        <Prism language="javascript">
+                            {{ code_3_1 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                PHP 샘플코드
+                            </div>
+
+                            <div class="ml-auto">
+                                <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-php" target="_blank">
+                                    <v-icon left>
+                                        mdi-gitlab
+                                    </v-icon>
+                                    Github
+                                </v-btn>
+                            </div>
+                        </div>
+                        <Prism language="php">
+                            {{ code_3_2 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                JAVA 샘플코드
+                            </div>
+
+                            <div class="ml-auto">
+                                <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-java" target="_blank">
+                                    <v-icon left>
+                                        mdi-gitlab
+                                    </v-icon>
+                                    Github
+                                </v-btn>
+                            </div>
+                        </div>
+                        <Prism language="javascript">
+                            {{ code_3_3 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                Node 샘플코드
+                            </div>
+
+                            <div class="ml-auto">
+                                <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-nodeJS" target="_blank">
+                                    <v-icon left>
+                                        mdi-gitlab
+                                    </v-icon>
+                                    Github
+                                </v-btn>
+                            </div>
+                        </div>
+                        <Prism language="javascript">
+                            {{ code_3_4 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+            </v-tabs>
         </article>
         <v-divider class="mb-12"></v-divider>
 
@@ -665,78 +749,105 @@
             <h3 class="pl-4">
                 샘플코드
             </h3>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+            <v-tabs background-color="indigo" grow dark>
+                <v-tab color="purple darken-1">
+                    <div class=" font-weight-bold">
                         요청예시
                     </div>
-                </div>
-
-                <Prism language="javascript">
-                    {{ code_4_1 }}
-                </Prism>
-            </v-card>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+                </v-tab>
+                <v-tab>
+                    <div class=" font-weight-bold">
                         PHP 샘플코드
                     </div>
-
-                    <div class="ml-auto">
-                        <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-php" target="_blank">
-                            <v-icon left>
-                                mdi-gitlab
-                            </v-icon>
-                            Github
-                        </v-btn>
-                    </div>
-                </div>
-                <Prism language="php">
-                    {{ code_4_2 }}
-                </Prism>
-            </v-card>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+                </v-tab>
+                <v-tab>
+                    <div class="font-weight-bold">
                         JAVA 샘플코드
                     </div>
-
-                    <div class="ml-auto">
-                        <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-java" target="_blank">
-                            <v-icon left>
-                                mdi-gitlab
-                            </v-icon>
-                            Github
-                        </v-btn>
-                    </div>
-                </div>
-                <Prism language="javascript">
-                    {{ code_4_3 }}
-                </Prism>
-            </v-card>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+                </v-tab>
+                <v-tab>
+                    <div class="font-weight-bold">
                         Node 샘플코드
                     </div>
+                </v-tab>
 
-                    <div class="ml-auto">
-                        <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-nodeJS" target="_blank">
-                            <v-icon left>
-                                mdi-gitlab
-                            </v-icon>
-                            Github
-                        </v-btn>
-                    </div>
-                </div>
-                <Prism language="javascript">
-                    {{ code_4_4 }}
-                </Prism>
-            </v-card>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                요청예시
+                            </div>
+                        </div>
+
+                        <Prism language="javascript">
+                            {{ code_4_1 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                PHP 샘플코드
+                            </div>
+
+                            <div class="ml-auto">
+                                <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-php" target="_blank">
+                                    <v-icon left>
+                                        mdi-gitlab
+                                    </v-icon>
+                                    Github
+                                </v-btn>
+                            </div>
+                        </div>
+                        <Prism language="php">
+                            {{ code_4_2 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                JAVA 샘플코드
+                            </div>
+
+                            <div class="ml-auto">
+                                <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-java" target="_blank">
+                                    <v-icon left>
+                                        mdi-gitlab
+                                    </v-icon>
+                                    Github
+                                </v-btn>
+                            </div>
+                        </div>
+                        <Prism language="javascript">
+                            {{ code_4_3 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                Node 샘플코드
+                            </div>
+
+                            <div class="ml-auto">
+                                <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-nodeJS" target="_blank">
+                                    <v-icon left>
+                                        mdi-gitlab
+                                    </v-icon>
+                                    Github
+                                </v-btn>
+                            </div>
+                        </div>
+                        <Prism language="javascript">
+                            {{ code_4_4 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+            </v-tabs>
         </article>
         <v-divider class="mb-12"></v-divider>
 
@@ -834,78 +945,105 @@
             <h3 class="pl-4">
                 샘플코드
             </h3>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+            <v-tabs background-color="indigo" grow dark>
+                <v-tab color="purple darken-1">
+                    <div class=" font-weight-bold">
                         요청예시
                     </div>
-                </div>
-
-                <Prism language="javascript">
-                    {{ code_5_1 }}
-                </Prism>
-            </v-card>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+                </v-tab>
+                <v-tab>
+                    <div class=" font-weight-bold">
                         PHP 샘플코드
                     </div>
-
-                    <div class="ml-auto">
-                        <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-php" target="_blank">
-                            <v-icon left>
-                                mdi-gitlab
-                            </v-icon>
-                            Github
-                        </v-btn>
-                    </div>
-                </div>
-                <Prism language="php">
-                    {{ code_5_2 }}
-                </Prism>
-            </v-card>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+                </v-tab>
+                <v-tab>
+                    <div class="font-weight-bold">
                         JAVA 샘플코드
                     </div>
-
-                    <div class="ml-auto">
-                        <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-java" target="_blank">
-                            <v-icon left>
-                                mdi-gitlab
-                            </v-icon>
-                            Github
-                        </v-btn>
-                    </div>
-                </div>
-                <Prism language="javascript">
-                    {{ code_5_3 }}
-                </Prism>
-            </v-card>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+                </v-tab>
+                <v-tab>
+                    <div class="font-weight-bold">
                         Node 샘플코드
                     </div>
+                </v-tab>
 
-                    <div class="ml-auto">
-                        <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-nodeJS" target="_blank">
-                            <v-icon left>
-                                mdi-gitlab
-                            </v-icon>
-                            Github
-                        </v-btn>
-                    </div>
-                </div>
-                <Prism language="javascript">
-                    {{ code_5_4 }}
-                </Prism>
-            </v-card>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                요청예시
+                            </div>
+                        </div>
+
+                        <Prism language="javascript">
+                            {{ code_5_1 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                PHP 샘플코드
+                            </div>
+
+                            <div class="ml-auto">
+                                <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-php" target="_blank">
+                                    <v-icon left>
+                                        mdi-gitlab
+                                    </v-icon>
+                                    Github
+                                </v-btn>
+                            </div>
+                        </div>
+                        <Prism language="php">
+                            {{ code_5_2 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                JAVA 샘플코드
+                            </div>
+
+                            <div class="ml-auto">
+                                <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-java" target="_blank">
+                                    <v-icon left>
+                                        mdi-gitlab
+                                    </v-icon>
+                                    Github
+                                </v-btn>
+                            </div>
+                        </div>
+                        <Prism language="javascript">
+                            {{ code_5_3 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                Node 샘플코드
+                            </div>
+
+                            <div class="ml-auto">
+                                <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-nodeJS" target="_blank">
+                                    <v-icon left>
+                                        mdi-gitlab
+                                    </v-icon>
+                                    Github
+                                </v-btn>
+                            </div>
+                        </div>
+                        <Prism language="javascript">
+                            {{ code_5_4 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+            </v-tabs>
         </article>
         <v-divider class="mb-12"></v-divider>
 
@@ -1003,78 +1141,105 @@
             <h3 class="pl-4">
                 샘플코드
             </h3>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+            <v-tabs background-color="indigo" grow dark>
+                <v-tab color="purple darken-1">
+                    <div class=" font-weight-bold">
                         요청예시
                     </div>
-                </div>
-
-                <Prism language="javascript">
-                    {{ code_6_1 }}
-                </Prism>
-            </v-card>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+                </v-tab>
+                <v-tab>
+                    <div class=" font-weight-bold">
                         PHP 샘플코드
                     </div>
-
-                    <div class="ml-auto">
-                        <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-php" target="_blank">
-                            <v-icon left>
-                                mdi-gitlab
-                            </v-icon>
-                            Github
-                        </v-btn>
-                    </div>
-                </div>
-                <Prism language="php">
-                    {{ code_6_2 }}
-                </Prism>
-            </v-card>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+                </v-tab>
+                <v-tab>
+                    <div class="font-weight-bold">
                         JAVA 샘플코드
                     </div>
-
-                    <div class="ml-auto">
-                        <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-java" target="_blank">
-                            <v-icon left>
-                                mdi-gitlab
-                            </v-icon>
-                            Github
-                        </v-btn>
-                    </div>
-                </div>
-                <Prism language="javascript">
-                    {{ code_6_3 }}
-                </Prism>
-            </v-card>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+                </v-tab>
+                <v-tab>
+                    <div class="font-weight-bold">
                         Node 샘플코드
                     </div>
+                </v-tab>
 
-                    <div class="ml-auto">
-                        <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-nodeJS" target="_blank">
-                            <v-icon left>
-                                mdi-gitlab
-                            </v-icon>
-                            Github
-                        </v-btn>
-                    </div>
-                </div>
-                <Prism language="javascript">
-                    {{ code_6_4 }}
-                </Prism>
-            </v-card>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                요청예시
+                            </div>
+                        </div>
+
+                        <Prism language="javascript">
+                            {{ code_6_1 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                PHP 샘플코드
+                            </div>
+
+                            <div class="ml-auto">
+                                <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-php" target="_blank">
+                                    <v-icon left>
+                                        mdi-gitlab
+                                    </v-icon>
+                                    Github
+                                </v-btn>
+                            </div>
+                        </div>
+                        <Prism language="php">
+                            {{ code_6_2 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                JAVA 샘플코드
+                            </div>
+
+                            <div class="ml-auto">
+                                <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-java" target="_blank">
+                                    <v-icon left>
+                                        mdi-gitlab
+                                    </v-icon>
+                                    Github
+                                </v-btn>
+                            </div>
+                        </div>
+                        <Prism language="javascript">
+                            {{ code_6_3 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                Node 샘플코드
+                            </div>
+
+                            <div class="ml-auto">
+                                <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-nodeJS" target="_blank">
+                                    <v-icon left>
+                                        mdi-gitlab
+                                    </v-icon>
+                                    Github
+                                </v-btn>
+                            </div>
+                        </div>
+                        <Prism language="javascript">
+                            {{ code_6_4 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+            </v-tabs>
         </article>
         <v-divider class="mb-12"></v-divider>
 
@@ -1171,77 +1336,105 @@
                 샘플코드
             </h3>
 
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+            <v-tabs background-color="indigo" grow dark>
+                <v-tab color="purple darken-1">
+                    <div class=" font-weight-bold">
                         요청예시
                     </div>
-                </div>
-
-                <Prism language="javascript">
-                    {{ code_7_1 }}
-                </Prism>
-            </v-card>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+                </v-tab>
+                <v-tab>
+                    <div class=" font-weight-bold">
                         PHP 샘플코드
                     </div>
-
-                    <div class="ml-auto">
-                        <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-php" target="_blank">
-                            <v-icon left>
-                                mdi-gitlab
-                            </v-icon>
-                            Github
-                        </v-btn>
-                    </div>
-                </div>
-                <Prism language="php">
-                    {{ code_7_2 }}
-                </Prism>
-            </v-card>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+                </v-tab>
+                <v-tab>
+                    <div class="font-weight-bold">
                         JAVA 샘플코드
                     </div>
-
-                    <div class="ml-auto">
-                        <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-java" target="_blank">
-                            <v-icon left>
-                                mdi-gitlab
-                            </v-icon>
-                            Github
-                        </v-btn>
-                    </div>
-                </div>
-                <Prism language="javascript">
-                    {{ code_7_3 }}
-                </Prism>
-            </v-card>
-
-            <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
-                <div class="d-flex align-center pa-4">
-                    <div class="font-italic font-weight-bold">
+                </v-tab>
+                <v-tab>
+                    <div class="font-weight-bold">
                         Node 샘플코드
                     </div>
+                </v-tab>
 
-                    <div class="ml-auto">
-                        <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-nodeJS" target="_blank">
-                            <v-icon left>
-                                mdi-gitlab
-                            </v-icon>
-                            Github
-                        </v-btn>
-                    </div>
-                </div>
-                <Prism language="javascript">
-                    {{ code_7_4 }}
-                </Prism>
-            </v-card>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                요청예시
+                            </div>
+                        </div>
+
+                        <Prism language="javascript">
+                            {{ code_7_1 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                PHP 샘플코드
+                            </div>
+
+                            <div class="ml-auto">
+                                <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-php" target="_blank">
+                                    <v-icon left>
+                                        mdi-gitlab
+                                    </v-icon>
+                                    Github
+                                </v-btn>
+                            </div>
+                        </div>
+                        <Prism language="php">
+                            {{ code_7_2 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                JAVA 샘플코드
+                            </div>
+
+                            <div class="ml-auto">
+                                <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-java" target="_blank">
+                                    <v-icon left>
+                                        mdi-gitlab
+                                    </v-icon>
+                                    Github
+                                </v-btn>
+                            </div>
+                        </div>
+                        <Prism language="javascript">
+                            {{ code_7_3 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                    <v-card outlined elevation="4" class="temp_code ma-4 mb-12">
+                        <div class="d-flex align-center pa-4">
+                            <div class="font-italic font-weight-bold">
+                                Node 샘플코드
+                            </div>
+
+                            <div class="ml-auto">
+                                <v-btn small color="indigo accent-2" dark href="https://github.com/PAYPLECORP/sample-nodeJS" target="_blank">
+                                    <v-icon left>
+                                        mdi-gitlab
+                                    </v-icon>
+                                    Github
+                                </v-btn>
+                            </div>
+                        </div>
+                        <Prism language="javascript">
+                            {{ code_7_4 }}
+                        </Prism>
+                    </v-card>
+                </v-tab-item>
+            </v-tabs>
         </article>
         <v-divider class="mb-12"></v-divider>
 
@@ -1283,7 +1476,7 @@
                                 255
                             </td>
                             <td colspan="1" rowspan="1">
-                                <a href="https://www.google.com/url?q=http://dev.testcpay.payple.kr/&amp;sa=D&amp;ust=1592788945479000">testcpay.payple.kr</a>
+                                testcpay.payple.kr
                             </td>
                             <td colspan="1" rowspan="1">
                                 요청 URL
@@ -1444,10 +1637,13 @@
                     {{ code_8_1 }}
                 </Prism>
             </v-card>
-        </article>
-        <v-divider class="mb-12"></v-divider>
 
-        
+            <v-alert border="left" colored-border type="error" elevation="2" class="mx-4">
+                가맹점 인증 요청이 완료되어 응답을 받게 되면 이제 작업이 필요한 API를 수행하게 됩니다. <br />
+                가맹점 인증 응답 메세지 안에 들어 있는 AuthKey와 return_url 정보를 확인하고 <br />
+                앞으로 수행할 작업에 해당 값을 입력하시면 됩니다.
+            </v-alert>
+        </article>
     </div>
 </template>
 
@@ -1472,629 +1668,1119 @@ export default {
                     to: "/",
                 },
                 {
-                    text: "카드결제",
-                    disabled: false,
-                    to: "/card/outline",
-                },
-                {
-                    text: "최초결제",
+                    text: "환경설정",
                     disabled: true,
                 },
                 {
-                    text: "결제 창 호출",
+                    text: "상황별 인증 요청 방식",
                     disabled: true,
                 },
             ],
             code_1_1: `
-POST /php/auth.php HTTP/1.1
-Host: testcpay.payple.kr
-Content-Type: application/json
-Cache-Control: no-cache
-{
-  "cst_id": "test",
-  "custKey": "abcd1234567890",
-  “PCD_PAY_TYPE”: “card”,
-  “PCD_PAY_WORK”: “AUTHREG”
-}
+/*
+    * TEST : https://testcpay.payple.kr
+    * REAL : https://cpay.payple.kr
+    */
+    POST /php/auth.php HTTP/1.1
+    Host: testcpay.payple.kr
+    Content-Type: application/json
+    Cache-Control: no-cache
+    {
+    "cst_id": "test",
+    "custKey": "abcd1234567890",
+    "PCD_PAY_TYPE": "card",
+    "PCD_PAY_WORK": "AUTHREG"
+    }
 `,
             code_1_2: `
-<?php
-$header_data = array(
-    'Content-Type: application/json',
-    'Cache-Control: no-cache',
-    'referer: http://localhost:8080'
-);
- 
-$data_string = '{
-  "cst_id": "test",
-  "custKey": "abcd1234567890",
-  “PCD_PAY_WORK”: “AUTHREG”
-}';
- 
-$ch = curl_init('https://testcpay.payple.kr/php/auth.php');
-curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch, CURLOPT_SSLVERSION, 4);
-curl_setopt($ch, CURLOPT_HTTPHEADER, $header_data);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
- 
-$response = curl_exec ($ch);
-$status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-echo "status_code:".$status_code." ";
-curl_close ($ch);
-if($status_code == 200) {
-    echo $response;
-} else {
-    echo "Error 내용:".$response;
-}
- 
-?>
+/* 
+    * TEST : https://testcpay.payple.kr/php/auth.php
+    * REAL : https://cpay.payple.kr/php/auth.php 
+    */
+    header("Expires: Mon 26 Jul 1997 05:00:00 GMT");
+    header("Last-Modified: " . gmdate("D, d, M Y H:i:s") . " GMT");
+    header("Cache-Control: no-store, no-cache, must-revalidate");
+    header("Cache-Control: post-check=0; pre-check=0", false);
+    header("Pragma: no-cache");
+    header("Content-type: application/json; charset=utf-8");
+    
+    // 발급받은 비밀키. 유출에 주의하시기 바랍니다.
+    $post_data = array (
+        "cst_id" => "test",
+        "custKey" => "abcd1234567890",
+        "PCD_PAY_TYPE" => "card",
+        "PCD_PAY_WORK": "AUTHREG"
+    );
+    
+    $ch = curl_init('https://testcpay.payple.kr/php/auth.php');
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_SSLVERSION, 4);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($post_data));
+
+    ob_start();
+    $response = curl_exec ($ch);
+    $buffer = ob_get_contents();
+    ob_end_clean();
+
+    $status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    
+    curl_close ($ch);
+    if($status_code == 200) {
+        echo $buffer;
+    }
+
+
 `,
             code_1_3: `
-java
+/* 
+    * TEST : https://testcpay.payple.kr/php/auth.php
+    * REAL : https://cpay.payple.kr/php/auth.php 
+    */
+    @ResponseBody
+    @PostMapping(value = "/auth")
+    public JSONObject payAuth() {
+        JSONObject jsonObject = new JSONObject();
+        JSONParser jsonParser = new JSONParser();
+        try {
+
+            String pURL = "https://testcpay.payple.kr/php/auth.php";
+            // 발급받은 비밀키. 유출에 주의하시기 바랍니다.
+            String cst_id = "test";
+            String cust_key = "abcd1234567890";
+            String PCD_PAY_TYPE = "card";
+            String PCD_PAY_WORK = "AUTHREG";
+
+            JSONObject obj = new JSONObject();
+            obj.put("cst_id", cst_id);
+            obj.put("custKey", cust_key);
+            obj.put("PCD_PAY_TYPE", PCD_PAY_TYPE);
+            obj.put("PCD_PAY_WORK", PCD_PAY_WORK);
+
+            URL url = new URL(pURL);
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+
+            con.setRequestMethod("POST");
+            con.setRequestProperty("content-type", "application/json");
+            con.setDoOutput(true);
+
+            DataOutputStream wr = new DataOutputStream(con.getOutputStream());
+            wr.writeBytes(obj.toString());
+            wr.flush();
+            wr.close();
+
+            int responseCode = con.getResponseCode();
+            BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+            String inputLine;
+            StringBuffer response = new StringBuffer();
+
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
+            }
+
+            in.close();
+
+            // System.out.println("HTTP 응답 코드 : " + responseCode);
+            // System.out.println("HTTP Body : " + response.toString());
+
+            jsonObject = (JSONObject) jsonParser.parse(response.toString());
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return jsonObject;
+    }
+
+
 `,
             code_1_4: `
 .env.json
-{
-    "CST_ID" : "test",
-    "CUST_KEY" : "abcd1234567890",
-    “PCD_PAY_WORK”: “AUTHREG”,
-    "PCD_HTTP_REFERER" : "http://localhost:3000",
-    "URL" : "https://testcpay.payple.kr/php/auth.php"
-}
- 
-app.js
-/*
- * 가맹점인증 요청 REST
- */
-app.post('/auth', (req, res) => {
- 
-    /* 
-     * process.env.URL
-     * TEST : https://testcpay.payple.kr/php/auth.php
-     * REAL : https://cpay.payple.kr/php/auth.php 
-     */
-    let url = process.env.URL,
-        params = {
-            cst_id  : process.env.CST_ID || '',
-            custKey : process.env.CUST_KEY || '',
-PCD_PAY_WORK : process.env.PCD_PAY_WORK || ''
-        }
- 
- 
-    post(url, JSON.stringify(params), {
-            headers: {
-                'content-type': 'application/json',
-                'referer': process.env.PCD_HTTP_REFERER
+    {
+        "CST_ID" : "test", //발급받은 비밀키. 유출에 주의하시기 바랍니다.
+        "CUST_KEY" : "abcd1234567890",
+        "PCD_PAY_WORK": "AUTHREG",
+        "PCD_PAY_TYPE": "card",
+        "URL" : "https://testcpay.payple.kr/php/auth.php"
+    }
+    
+    app.js
+    /*
+    * 가맹점인증 요청 REST
+    */
+    app.post('/auth', (req, res) => {
+    
+        /* 
+        * process.env.URL
+        * TEST : https://testcpay.payple.kr/php/auth.php
+        * REAL : https://cpay.payple.kr/php/auth.php 
+        */
+        let url = process.env.URL,
+            params = {
+                cst_id  : process.env.CST_ID || '',
+                custKey : process.env.CUST_KEY || '',
+                PCD_PAY_WORK : process.env.PCD_PAY_WORK || '',
+                PCD_PAY_TYPE : process.env.PCD_PAY_TYPE || ''
             }
-        })
-        .then(r => res.json( {  ...r.data }))
-        .catch(err => console.error(err))
-})
+    
+    
+        post(url, JSON.stringify(params), {
+                headers: {
+                    'content-type': 'application/json'
+                }
+            })
+            .then(r => res.json( {  ...r.data }))
+            .catch(err => console.error(err))
+    })
+
+
 `,
             code_2_1: `
-POST /php/auth.php HTTP/1.1
-Host: testcpay.payple.kr
-Content-Type: application/json
-Cache-Control: no-cache
-{
-  "cst_id": "test",
-  "custKey": "abcd1234567890",
-  “PCD_PAY_TYPE”: “card”,
-  “PCD_SIMPLE_FLAG”: “Y”
-}
+/*
+    * TEST : https://testcpay.payple.kr
+    * REAL : https://cpay.payple.kr
+    */
+    POST /php/auth.php HTTP/1.1
+    Host: testcpay.payple.kr
+    Content-Type: application/json
+    Cache-Control: no-cache
+    {
+    "cst_id": "test",
+    "custKey": "abcd1234567890",
+    "PCD_PAY_TYPE": "card",
+    "PCD_PAY_WORK": "AUTHREG"
+    }
 `,
             code_2_2: `
-<?php
-$header_data = array(
-    'Content-Type: application/json',
-    'Cache-Control: no-cache',
-    'referer: http://localhost:8080'
-);
- 
-$data_string = '{
-  "cst_id": "test",
-  "custKey": "abcd1234567890",
-  “PCD_PAY_TYPE”: “card”,
-  “PCD_SIMPLE_FLAG”: “Y”
-}';
- 
-$ch = curl_init('https://testcpay.payple.kr/php/auth.php');
-curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch, CURLOPT_SSLVERSION, 4);
-curl_setopt($ch, CURLOPT_HTTPHEADER, $header_data);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
- 
-$response = curl_exec ($ch);
-$status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-echo "status_code:".$status_code." ";
-curl_close ($ch);
-if($status_code == 200) {
-    echo $response;
-} else {
-    echo "Error 내용:".$response;
-}
- 
-?>
+/* 
+    * TEST : https://testcpay.payple.kr/php/auth.php
+    * REAL : https://cpay.payple.kr/php/auth.php 
+    */
+    header("Expires: Mon 26 Jul 1997 05:00:00 GMT");
+    header("Last-Modified: " . gmdate("D, d, M Y H:i:s") . " GMT");
+    header("Cache-Control: no-store, no-cache, must-revalidate");
+    header("Cache-Control: post-check=0; pre-check=0", false);
+    header("Pragma: no-cache");
+    header("Content-type: application/json; charset=utf-8");
+    
+    // 발급받은 비밀키. 유출에 주의하시기 바랍니다.
+    $post_data = array (
+        "cst_id" => "test",
+        "custKey" => "abcd1234567890",
+        "PCD_PAY_TYPE" => "card",
+        "PCD_PAY_WORK": "AUTHREG"
+    );
+    
+    $ch = curl_init('https://testcpay.payple.kr/php/auth.php');
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_SSLVERSION, 4);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($post_data));
+
+    ob_start();
+    $response = curl_exec ($ch);
+    $buffer = ob_get_contents();
+    ob_end_clean();
+
+    $status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    
+    curl_close ($ch);
+    if($status_code == 200) {
+        echo $buffer;
+    }
+
+
 `,
             code_2_3: `
-JAVA
+/* 
+    * TEST : https://testcpay.payple.kr/php/auth.php
+    * REAL : https://cpay.payple.kr/php/auth.php 
+    */
+    @ResponseBody
+    @PostMapping(value = "/auth")
+    public JSONObject payAuth() {
+        JSONObject jsonObject = new JSONObject();
+        JSONParser jsonParser = new JSONParser();
+        try {
+
+            String pURL = "https://testcpay.payple.kr/php/auth.php";
+            // 발급받은 비밀키. 유출에 주의하시기 바랍니다.
+            String cst_id = "test";
+            String cust_key = "abcd1234567890";
+            String PCD_PAY_TYPE = "card";
+            String PCD_PAY_WORK = "AUTHREG";
+
+            JSONObject obj = new JSONObject();
+            obj.put("cst_id", cst_id);
+            obj.put("custKey", cust_key);
+            obj.put("PCD_PAY_TYPE", PCD_PAY_TYPE);
+            obj.put("PCD_PAY_WORK", PCD_PAY_WORK);
+
+            URL url = new URL(pURL);
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+
+            con.setRequestMethod("POST");
+            con.setRequestProperty("content-type", "application/json");
+            con.setDoOutput(true);
+
+            DataOutputStream wr = new DataOutputStream(con.getOutputStream());
+            wr.writeBytes(obj.toString());
+            wr.flush();
+            wr.close();
+
+            int responseCode = con.getResponseCode();
+            BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+            String inputLine;
+            StringBuffer response = new StringBuffer();
+
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
+            }
+
+            in.close();
+
+            // System.out.println("HTTP 응답 코드 : " + responseCode);
+            // System.out.println("HTTP Body : " + response.toString());
+
+            jsonObject = (JSONObject) jsonParser.parse(response.toString());
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return jsonObject;
+    }
+
+
 `,
             code_2_4: `
 .env.json
-{
-    "CST_ID" : "test",
-    "CUST_KEY" : "abcd1234567890",
-    “PCD_PAY_TYPE”: “card”,
-    “PCD_SIMPLE_FLAG”: “Y”,
-    "PCD_HTTP_REFERER" : "http://localhost:3000",
-    "URL" : "https://testcpay.payple.kr/php/auth.php"
-}
- 
-app.js
-/*
- * 가맹점인증 요청 REST
- */
-app.post('/auth', (req, res) => {
- 
-    /* 
-     * process.env.URL
-     * TEST : https://testcpay.payple.kr/php/auth.php
-     * REAL : https://cpay.payple.kr/php/auth.php 
-     */
-    let url = process.env.URL,
-        params = {
-            cst_id  : process.env.CST_ID || '',
-            custKey : process.env.CUST_KEY || '',
-PCD_PAY_TYPE : process.env.PCD_PAY_TYPE || '',
-PCD_SIMPLE_FLAG : process.env.PCD_SIMPLE_FLAG || ''
-        }
- 
- 
-    post(url, JSON.stringify(params), {
-            headers: {
-                'content-type': 'application/json',
-                'referer': process.env.PCD_HTTP_REFERER
+    {
+        "CST_ID" : "test", //발급받은 비밀키. 유출에 주의하시기 바랍니다.
+        "CUST_KEY" : "abcd1234567890",
+        "PCD_PAY_WORK": "AUTHREG",
+        "PCD_PAY_TYPE": "card",
+        "URL" : "https://testcpay.payple.kr/php/auth.php"
+    }
+    
+    app.js
+    /*
+    * 가맹점인증 요청 REST
+    */
+    app.post('/auth', (req, res) => {
+    
+        /* 
+        * process.env.URL
+        * TEST : https://testcpay.payple.kr/php/auth.php
+        * REAL : https://cpay.payple.kr/php/auth.php 
+        */
+        let url = process.env.URL,
+            params = {
+                cst_id  : process.env.CST_ID || '',
+                custKey : process.env.CUST_KEY || '',
+                PCD_PAY_WORK : process.env.PCD_PAY_WORK || '',
+                PCD_PAY_TYPE : process.env.PCD_PAY_TYPE || ''
             }
-        })
-        .then(r => res.json( {  ...r.data }))
-        .catch(err => console.error(err))
-})
+    
+    
+        post(url, JSON.stringify(params), {
+                headers: {
+                    'content-type': 'application/json'
+                }
+            })
+            .then(r => res.json( {  ...r.data }))
+            .catch(err => console.error(err))
+    })
+
+
 `,
             code_3_1: `
-POST /php/auth.php HTTP/1.1
-Host: testcpay.payple.kr
-Content-Type: application/json
-Cache-Control: no-cache
-{
-  "cst_id": "test",
-  "custKey": "abcd1234567890",
-  “PCD_PAY_TYPE”: “card”,
-  “PCD_REGULER_FLAG”: “Y”
-}
+/*
+    * TEST : https://testcpay.payple.kr
+    * REAL : https://cpay.payple.kr
+    */
+    POST /php/auth.php HTTP/1.1
+    Host: testcpay.payple.kr
+    Content-Type: application/json
+    Cache-Control: no-cache
+    {
+    "cst_id": "test",
+    "custKey": "abcd1234567890",
+    "PCD_PAY_TYPE": "card",
+    "PCD_PAY_WORK": "AUTHREG"
+    }
 `,
             code_3_2: `
-<?php
-$header_data = array(
-    'Content-Type: application/json',
-    'Cache-Control: no-cache',
-    'referer: http://localhost:8080'
-);
- 
-$data_string = '{
-  "cst_id": "test",
-  "custKey": "abcd1234567890",
-  “PCD_PAY_TYPE”: “card”,
-  “PCD_REGULER_FLAG”: “Y”
-}';
- 
-$ch = curl_init('https://testcpay.payple.kr/php/auth.php');
-curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch, CURLOPT_SSLVERSION, 4);
-curl_setopt($ch, CURLOPT_HTTPHEADER, $header_data);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
- 
-$response = curl_exec ($ch);
-$status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-echo "status_code:".$status_code." ";
-curl_close ($ch);
-if($status_code == 200) {
-    echo $response;
-} else {
-    echo "Error 내용:".$response;
-}
- 
-?>
+/* 
+    * TEST : https://testcpay.payple.kr/php/auth.php
+    * REAL : https://cpay.payple.kr/php/auth.php 
+    */
+    header("Expires: Mon 26 Jul 1997 05:00:00 GMT");
+    header("Last-Modified: " . gmdate("D, d, M Y H:i:s") . " GMT");
+    header("Cache-Control: no-store, no-cache, must-revalidate");
+    header("Cache-Control: post-check=0; pre-check=0", false);
+    header("Pragma: no-cache");
+    header("Content-type: application/json; charset=utf-8");
+    
+    // 발급받은 비밀키. 유출에 주의하시기 바랍니다.
+    $post_data = array (
+        "cst_id" => "test",
+        "custKey" => "abcd1234567890",
+        "PCD_PAY_TYPE" => "card",
+        "PCD_PAY_WORK": "AUTHREG"
+    );
+    
+    $ch = curl_init('https://testcpay.payple.kr/php/auth.php');
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_SSLVERSION, 4);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($post_data));
+
+    ob_start();
+    $response = curl_exec ($ch);
+    $buffer = ob_get_contents();
+    ob_end_clean();
+
+    $status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    
+    curl_close ($ch);
+    if($status_code == 200) {
+        echo $buffer;
+    }
+
+
 `,
             code_3_3: `
-java
+/* 
+    * TEST : https://testcpay.payple.kr/php/auth.php
+    * REAL : https://cpay.payple.kr/php/auth.php 
+    */
+    @ResponseBody
+    @PostMapping(value = "/auth")
+    public JSONObject payAuth() {
+        JSONObject jsonObject = new JSONObject();
+        JSONParser jsonParser = new JSONParser();
+        try {
+
+            String pURL = "https://testcpay.payple.kr/php/auth.php";
+            // 발급받은 비밀키. 유출에 주의하시기 바랍니다.
+            String cst_id = "test";
+            String cust_key = "abcd1234567890";
+            String PCD_PAY_TYPE = "card";
+            String PCD_PAY_WORK = "AUTHREG";
+
+            JSONObject obj = new JSONObject();
+            obj.put("cst_id", cst_id);
+            obj.put("custKey", cust_key);
+            obj.put("PCD_PAY_TYPE", PCD_PAY_TYPE);
+            obj.put("PCD_PAY_WORK", PCD_PAY_WORK);
+
+            URL url = new URL(pURL);
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+
+            con.setRequestMethod("POST");
+            con.setRequestProperty("content-type", "application/json");
+            con.setDoOutput(true);
+
+            DataOutputStream wr = new DataOutputStream(con.getOutputStream());
+            wr.writeBytes(obj.toString());
+            wr.flush();
+            wr.close();
+
+            int responseCode = con.getResponseCode();
+            BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+            String inputLine;
+            StringBuffer response = new StringBuffer();
+
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
+            }
+
+            in.close();
+
+            // System.out.println("HTTP 응답 코드 : " + responseCode);
+            // System.out.println("HTTP Body : " + response.toString());
+
+            jsonObject = (JSONObject) jsonParser.parse(response.toString());
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return jsonObject;
+    }
+
+
 `,
             code_3_4: `
 .env.json
-{
-    "CST_ID" : "test",
-    "CUST_KEY" : "abcd1234567890",
-    “PCD_PAY_TYPE”: “card”,
-    “PCD_REGULER_FLAG”: “Y”,
-    "PCD_HTTP_REFERER" : "http://localhost:3000",
-    "URL" : "https://testcpay.payple.kr/php/auth.php"
-}
- 
-app.js
-/*
- * 가맹점인증 요청 REST
- */
-app.post('/auth', (req, res) => {
- 
-    /* 
-     * process.env.URL
-     * TEST : https://testcpay.payple.kr/php/auth.php
-     * REAL : https://cpay.payple.kr/php/auth.php 
-     */
-    let url = process.env.URL,
-        params = {
-            cst_id  : process.env.CST_ID || '',
-            custKey : process.env.CUST_KEY || '',
-PCD_PAY_TYPE : process.env.PCD_PAY_TYPE || '',
-PCD_REGULER_FLAG : process.env.PCD_REGULER_FLAG || ''
-        }
- 
- 
-    post(url, JSON.stringify(params), {
-            headers: {
-                'content-type': 'application/json',
-                'referer': process.env.PCD_HTTP_REFERER
+    {
+        "CST_ID" : "test", //발급받은 비밀키. 유출에 주의하시기 바랍니다.
+        "CUST_KEY" : "abcd1234567890",
+        "PCD_PAY_WORK": "AUTHREG",
+        "PCD_PAY_TYPE": "card",
+        "URL" : "https://testcpay.payple.kr/php/auth.php"
+    }
+    
+    app.js
+    /*
+    * 가맹점인증 요청 REST
+    */
+    app.post('/auth', (req, res) => {
+    
+        /* 
+        * process.env.URL
+        * TEST : https://testcpay.payple.kr/php/auth.php
+        * REAL : https://cpay.payple.kr/php/auth.php 
+        */
+        let url = process.env.URL,
+            params = {
+                cst_id  : process.env.CST_ID || '',
+                custKey : process.env.CUST_KEY || '',
+                PCD_PAY_WORK : process.env.PCD_PAY_WORK || '',
+                PCD_PAY_TYPE : process.env.PCD_PAY_TYPE || ''
             }
-        })
-        .then(r => res.json( {  ...r.data }))
-        .catch(err => console.error(err))
-})
+    
+    
+        post(url, JSON.stringify(params), {
+                headers: {
+                    'content-type': 'application/json'
+                }
+            })
+            .then(r => res.json( {  ...r.data }))
+            .catch(err => console.error(err))
+    })
+
+
 `,
             code_4_1: `
-POST /php/auth.php HTTP/1.1
-Host: testcpay.payple.kr
-Content-Type: application/json
-Cache-Control: no-cache
-{
-  "cst_id": "test",
-  "custKey": "abcd1234567890",
-  “PCD_PAYCANCEL_FLAG”: “Y”
-}
+/*
+    * TEST : https://testcpay.payple.kr
+    * REAL : https://cpay.payple.kr
+    */
+    POST /php/auth.php HTTP/1.1
+    Host: testcpay.payple.kr
+    Content-Type: application/json
+    Cache-Control: no-cache
+    {
+    "cst_id": "test",
+    "custKey": "abcd1234567890",
+    "PCD_PAY_TYPE": "card",
+    "PCD_PAY_WORK": "AUTHREG"
+    }
 `,
             code_4_2: `
-<?php
-$header_data = array(
-    'Content-Type: application/json',
-    'Cache-Control: no-cache',
-    'referer: http://localhost:8080'
-);
- 
-$data_string = '{
-  "cst_id": "test",
-  "custKey": "abcd1234567890",
-  “PCD_PAYCANCEL_FLAG”: “Y”
-}';
- 
-$ch = curl_init('https://testcpay.payple.kr/php/auth.php');
-curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch, CURLOPT_SSLVERSION, 4);
-curl_setopt($ch, CURLOPT_HTTPHEADER, $header_data);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
- 
-$response = curl_exec ($ch);
-$status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-echo "status_code:".$status_code." ";
-curl_close ($ch);
-if($status_code == 200) {
-    echo $response;
-} else {
-    echo "Error 내용:".$response;
-}
- 
-?>
+/* 
+    * TEST : https://testcpay.payple.kr/php/auth.php
+    * REAL : https://cpay.payple.kr/php/auth.php 
+    */
+    header("Expires: Mon 26 Jul 1997 05:00:00 GMT");
+    header("Last-Modified: " . gmdate("D, d, M Y H:i:s") . " GMT");
+    header("Cache-Control: no-store, no-cache, must-revalidate");
+    header("Cache-Control: post-check=0; pre-check=0", false);
+    header("Pragma: no-cache");
+    header("Content-type: application/json; charset=utf-8");
+    
+    // 발급받은 비밀키. 유출에 주의하시기 바랍니다.
+    $post_data = array (
+        "cst_id" => "test",
+        "custKey" => "abcd1234567890",
+        "PCD_PAY_TYPE" => "card",
+        "PCD_PAY_WORK": "AUTHREG"
+    );
+    
+    $ch = curl_init('https://testcpay.payple.kr/php/auth.php');
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_SSLVERSION, 4);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($post_data));
+
+    ob_start();
+    $response = curl_exec ($ch);
+    $buffer = ob_get_contents();
+    ob_end_clean();
+
+    $status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    
+    curl_close ($ch);
+    if($status_code == 200) {
+        echo $buffer;
+    }
+
+
 `,
             code_4_3: `
-java
+/* 
+    * TEST : https://testcpay.payple.kr/php/auth.php
+    * REAL : https://cpay.payple.kr/php/auth.php 
+    */
+    @ResponseBody
+    @PostMapping(value = "/auth")
+    public JSONObject payAuth() {
+        JSONObject jsonObject = new JSONObject();
+        JSONParser jsonParser = new JSONParser();
+        try {
+
+            String pURL = "https://testcpay.payple.kr/php/auth.php";
+            // 발급받은 비밀키. 유출에 주의하시기 바랍니다.
+            String cst_id = "test";
+            String cust_key = "abcd1234567890";
+            String PCD_PAY_TYPE = "card";
+            String PCD_PAY_WORK = "AUTHREG";
+
+            JSONObject obj = new JSONObject();
+            obj.put("cst_id", cst_id);
+            obj.put("custKey", cust_key);
+            obj.put("PCD_PAY_TYPE", PCD_PAY_TYPE);
+            obj.put("PCD_PAY_WORK", PCD_PAY_WORK);
+
+            URL url = new URL(pURL);
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+
+            con.setRequestMethod("POST");
+            con.setRequestProperty("content-type", "application/json");
+            con.setDoOutput(true);
+
+            DataOutputStream wr = new DataOutputStream(con.getOutputStream());
+            wr.writeBytes(obj.toString());
+            wr.flush();
+            wr.close();
+
+            int responseCode = con.getResponseCode();
+            BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+            String inputLine;
+            StringBuffer response = new StringBuffer();
+
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
+            }
+
+            in.close();
+
+            // System.out.println("HTTP 응답 코드 : " + responseCode);
+            // System.out.println("HTTP Body : " + response.toString());
+
+            jsonObject = (JSONObject) jsonParser.parse(response.toString());
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return jsonObject;
+    }
+
+
 `,
             code_4_4: `
 .env.json
-{
-    "CST_ID" : "test",
-    "CUST_KEY" : "abcd1234567890",
-    “PCD_PAYCANCEL_FLAG”: “Y”,
-    "PCD_HTTP_REFERER" : "http://localhost:3000",
-    "URL" : "https://testcpay.payple.kr/php/auth.php"
-}
- 
-app.js
-/*
- * 가맹점인증 요청 REST
- */
-app.post('/auth', (req, res) => {
- 
-    /* 
-     * process.env.URL
-     * TEST : https://testcpay.payple.kr/php/auth.php
-     * REAL : https://cpay.payple.kr/php/auth.php 
-     */
-    let url = process.env.URL,
-        params = {
-            cst_id  : process.env.CST_ID || '',
-            custKey : process.env.CUST_KEY || '',
-PCD_PAYCANCEL_FLAG : process.env.PCD_PAYCANCEL_FLAG || ''
-        }
- 
- 
-    post(url, JSON.stringify(params), {
-            headers: {
-                'content-type': 'application/json',
-                'referer': process.env.PCD_HTTP_REFERER
+    {
+        "CST_ID" : "test", //발급받은 비밀키. 유출에 주의하시기 바랍니다.
+        "CUST_KEY" : "abcd1234567890",
+        "PCD_PAY_WORK": "AUTHREG",
+        "PCD_PAY_TYPE": "card",
+        "URL" : "https://testcpay.payple.kr/php/auth.php"
+    }
+    
+    app.js
+    /*
+    * 가맹점인증 요청 REST
+    */
+    app.post('/auth', (req, res) => {
+    
+        /* 
+        * process.env.URL
+        * TEST : https://testcpay.payple.kr/php/auth.php
+        * REAL : https://cpay.payple.kr/php/auth.php 
+        */
+        let url = process.env.URL,
+            params = {
+                cst_id  : process.env.CST_ID || '',
+                custKey : process.env.CUST_KEY || '',
+                PCD_PAY_WORK : process.env.PCD_PAY_WORK || '',
+                PCD_PAY_TYPE : process.env.PCD_PAY_TYPE || ''
             }
-        })
-        .then(r => res.json( {  ...r.data }))
-        .catch(err => console.error(err))
-})
+    
+    
+        post(url, JSON.stringify(params), {
+                headers: {
+                    'content-type': 'application/json'
+                }
+            })
+            .then(r => res.json( {  ...r.data }))
+            .catch(err => console.error(err))
+    })
+
+
 `,
             code_5_1: `
-POST /php/auth.php HTTP/1.1
-Host: testcpay.payple.kr
-Content-Type: application/json
-Cache-Control: no-cache
-{
-  "cst_id": "test",
-  "custKey": "abcd1234567890",
-  “PCD_PAY_WORK”: “PUSERDEL”
-}
+/*
+    * TEST : https://testcpay.payple.kr
+    * REAL : https://cpay.payple.kr
+    */
+    POST /php/auth.php HTTP/1.1
+    Host: testcpay.payple.kr
+    Content-Type: application/json
+    Cache-Control: no-cache
+    {
+    "cst_id": "test",
+    "custKey": "abcd1234567890",
+    "PCD_PAY_TYPE": "card",
+    "PCD_PAY_WORK": "AUTHREG"
+    }
 `,
             code_5_2: `
-<?php
-$header_data = array(
-    'Content-Type: application/json',
-    'Cache-Control: no-cache',
-    'referer: http://localhost:8080'
-);
- 
-$data_string = '{
-  "cst_id": "test",
-  "custKey": "abcd1234567890",
-  “PCD_PAY_WORK”: “PUSERDEL”
-}';
- 
-$ch = curl_init('https://testcpay.payple.kr/php/auth.php');
-curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch, CURLOPT_SSLVERSION, 4);
-curl_setopt($ch, CURLOPT_HTTPHEADER, $header_data);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
- 
-$response = curl_exec ($ch);
-$status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-echo "status_code:".$status_code." ";
-curl_close ($ch);
-if($status_code == 200) {
-    echo $response;
-} else {
-    echo "Error 내용:".$response;
-}
- 
-?>
+/* 
+    * TEST : https://testcpay.payple.kr/php/auth.php
+    * REAL : https://cpay.payple.kr/php/auth.php 
+    */
+    header("Expires: Mon 26 Jul 1997 05:00:00 GMT");
+    header("Last-Modified: " . gmdate("D, d, M Y H:i:s") . " GMT");
+    header("Cache-Control: no-store, no-cache, must-revalidate");
+    header("Cache-Control: post-check=0; pre-check=0", false);
+    header("Pragma: no-cache");
+    header("Content-type: application/json; charset=utf-8");
+    
+    // 발급받은 비밀키. 유출에 주의하시기 바랍니다.
+    $post_data = array (
+        "cst_id" => "test",
+        "custKey" => "abcd1234567890",
+        "PCD_PAY_TYPE" => "card",
+        "PCD_PAY_WORK": "AUTHREG"
+    );
+    
+    $ch = curl_init('https://testcpay.payple.kr/php/auth.php');
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_SSLVERSION, 4);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($post_data));
+
+    ob_start();
+    $response = curl_exec ($ch);
+    $buffer = ob_get_contents();
+    ob_end_clean();
+
+    $status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    
+    curl_close ($ch);
+    if($status_code == 200) {
+        echo $buffer;
+    }
+
+
 `,
             code_5_3: `
-java
+/* 
+    * TEST : https://testcpay.payple.kr/php/auth.php
+    * REAL : https://cpay.payple.kr/php/auth.php 
+    */
+    @ResponseBody
+    @PostMapping(value = "/auth")
+    public JSONObject payAuth() {
+        JSONObject jsonObject = new JSONObject();
+        JSONParser jsonParser = new JSONParser();
+        try {
+
+            String pURL = "https://testcpay.payple.kr/php/auth.php";
+            // 발급받은 비밀키. 유출에 주의하시기 바랍니다.
+            String cst_id = "test";
+            String cust_key = "abcd1234567890";
+            String PCD_PAY_TYPE = "card";
+            String PCD_PAY_WORK = "AUTHREG";
+
+            JSONObject obj = new JSONObject();
+            obj.put("cst_id", cst_id);
+            obj.put("custKey", cust_key);
+            obj.put("PCD_PAY_TYPE", PCD_PAY_TYPE);
+            obj.put("PCD_PAY_WORK", PCD_PAY_WORK);
+
+            URL url = new URL(pURL);
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+
+            con.setRequestMethod("POST");
+            con.setRequestProperty("content-type", "application/json");
+            con.setDoOutput(true);
+
+            DataOutputStream wr = new DataOutputStream(con.getOutputStream());
+            wr.writeBytes(obj.toString());
+            wr.flush();
+            wr.close();
+
+            int responseCode = con.getResponseCode();
+            BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+            String inputLine;
+            StringBuffer response = new StringBuffer();
+
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
+            }
+
+            in.close();
+
+            // System.out.println("HTTP 응답 코드 : " + responseCode);
+            // System.out.println("HTTP Body : " + response.toString());
+
+            jsonObject = (JSONObject) jsonParser.parse(response.toString());
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return jsonObject;
+    }
+
+
 `,
             code_5_4: `
 .env.json
-{
-    "CST_ID" : "test",
-    "CUST_KEY" : "abcd1234567890",
-    “PCD_PAY_WORK”: “PUSERDEL”,
-    "PCD_HTTP_REFERER" : "http://localhost:3000",
-    "URL" : "https://testcpay.payple.kr/php/auth.php"
-}
- 
-app.js
-/*
- * 가맹점인증 요청 REST
- */
-app.post('/auth', (req, res) => {
- 
-    /* 
-     * process.env.URL
-     * TEST : https://testcpay.payple.kr/php/auth.php
-     * REAL : https://cpay.payple.kr/php/auth.php 
-     */
-    let url = process.env.URL,
-        params = {
-            cst_id  : process.env.CST_ID || '',
-            custKey : process.env.CUST_KEY || '',
-PCD_PAY_WORK : process.env.PCD_PAY_WORK || ''
-        }
- 
- 
-    post(url, JSON.stringify(params), {
-            headers: {
-                'content-type': 'application/json',
-                'referer': process.env.PCD_HTTP_REFERER
+    {
+        "CST_ID" : "test", //발급받은 비밀키. 유출에 주의하시기 바랍니다.
+        "CUST_KEY" : "abcd1234567890",
+        "PCD_PAY_WORK": "AUTHREG",
+        "PCD_PAY_TYPE": "card",
+        "URL" : "https://testcpay.payple.kr/php/auth.php"
+    }
+    
+    app.js
+    /*
+    * 가맹점인증 요청 REST
+    */
+    app.post('/auth', (req, res) => {
+    
+        /* 
+        * process.env.URL
+        * TEST : https://testcpay.payple.kr/php/auth.php
+        * REAL : https://cpay.payple.kr/php/auth.php 
+        */
+        let url = process.env.URL,
+            params = {
+                cst_id  : process.env.CST_ID || '',
+                custKey : process.env.CUST_KEY || '',
+                PCD_PAY_WORK : process.env.PCD_PAY_WORK || '',
+                PCD_PAY_TYPE : process.env.PCD_PAY_TYPE || ''
             }
-        })
-        .then(r => res.json( {  ...r.data }))
-        .catch(err => console.error(err))
-})
+    
+    
+        post(url, JSON.stringify(params), {
+                headers: {
+                    'content-type': 'application/json'
+                }
+            })
+            .then(r => res.json( {  ...r.data }))
+            .catch(err => console.error(err))
+    })
+
+
 `,
             code_6_1: `
-POST /php/auth.php HTTP/1.1
-Host: testcpay.payple.kr
-Content-Type: application/json
-Cache-Control: no-cache
-{
-  "cst_id": "test",
-  "custKey": "abcd1234567890",
-  “PCD_PAY_WORK”: “PUSERINFO”
-}
+/*
+    * TEST : https://testcpay.payple.kr
+    * REAL : https://cpay.payple.kr
+    */
+    POST /php/auth.php HTTP/1.1
+    Host: testcpay.payple.kr
+    Content-Type: application/json
+    Cache-Control: no-cache
+    {
+    "cst_id": "test",
+    "custKey": "abcd1234567890",
+    "PCD_PAY_TYPE": "card",
+    "PCD_PAY_WORK": "AUTHREG"
+    }
 `,
             code_6_2: `
-<?php
-$header_data = array(
-    'Content-Type: application/json',
-    'Cache-Control: no-cache',
-    'referer: http://localhost:8080'
-);
- 
-$data_string = '{
-  "cst_id": "test",
-  "custKey": "abcd1234567890",
-  “PCD_PAY_WORK”: “PUSERINFO”
-}';
- 
-$ch = curl_init('https://testcpay.payple.kr/php/auth.php');
-curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch, CURLOPT_SSLVERSION, 4);
-curl_setopt($ch, CURLOPT_HTTPHEADER, $header_data);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
- 
-$response = curl_exec ($ch);
-$status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-echo "status_code:".$status_code." ";
-curl_close ($ch);
-if($status_code == 200) {
-    echo $response;
-} else {
-    echo "Error 내용:".$response;
-}
- 
-?>
+/* 
+    * TEST : https://testcpay.payple.kr/php/auth.php
+    * REAL : https://cpay.payple.kr/php/auth.php 
+    */
+    header("Expires: Mon 26 Jul 1997 05:00:00 GMT");
+    header("Last-Modified: " . gmdate("D, d, M Y H:i:s") . " GMT");
+    header("Cache-Control: no-store, no-cache, must-revalidate");
+    header("Cache-Control: post-check=0; pre-check=0", false);
+    header("Pragma: no-cache");
+    header("Content-type: application/json; charset=utf-8");
+    
+    // 발급받은 비밀키. 유출에 주의하시기 바랍니다.
+    $post_data = array (
+        "cst_id" => "test",
+        "custKey" => "abcd1234567890",
+        "PCD_PAY_TYPE" => "card",
+        "PCD_PAY_WORK": "AUTHREG"
+    );
+    
+    $ch = curl_init('https://testcpay.payple.kr/php/auth.php');
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_SSLVERSION, 4);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($post_data));
+
+    ob_start();
+    $response = curl_exec ($ch);
+    $buffer = ob_get_contents();
+    ob_end_clean();
+
+    $status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    
+    curl_close ($ch);
+    if($status_code == 200) {
+        echo $buffer;
+    }
+
+
 `,
             code_6_3: `
-java
+/* 
+    * TEST : https://testcpay.payple.kr/php/auth.php
+    * REAL : https://cpay.payple.kr/php/auth.php 
+    */
+    @ResponseBody
+    @PostMapping(value = "/auth")
+    public JSONObject payAuth() {
+        JSONObject jsonObject = new JSONObject();
+        JSONParser jsonParser = new JSONParser();
+        try {
+
+            String pURL = "https://testcpay.payple.kr/php/auth.php";
+            // 발급받은 비밀키. 유출에 주의하시기 바랍니다.
+            String cst_id = "test";
+            String cust_key = "abcd1234567890";
+            String PCD_PAY_TYPE = "card";
+            String PCD_PAY_WORK = "AUTHREG";
+
+            JSONObject obj = new JSONObject();
+            obj.put("cst_id", cst_id);
+            obj.put("custKey", cust_key);
+            obj.put("PCD_PAY_TYPE", PCD_PAY_TYPE);
+            obj.put("PCD_PAY_WORK", PCD_PAY_WORK);
+
+            URL url = new URL(pURL);
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+
+            con.setRequestMethod("POST");
+            con.setRequestProperty("content-type", "application/json");
+            con.setDoOutput(true);
+
+            DataOutputStream wr = new DataOutputStream(con.getOutputStream());
+            wr.writeBytes(obj.toString());
+            wr.flush();
+            wr.close();
+
+            int responseCode = con.getResponseCode();
+            BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+            String inputLine;
+            StringBuffer response = new StringBuffer();
+
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
+            }
+
+            in.close();
+
+            // System.out.println("HTTP 응답 코드 : " + responseCode);
+            // System.out.println("HTTP Body : " + response.toString());
+
+            jsonObject = (JSONObject) jsonParser.parse(response.toString());
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return jsonObject;
+    }
+
+
 `,
             code_6_4: `
 .env.json
-{
-    "CST_ID" : "test",
-    "CUST_KEY" : "abcd1234567890",
-    “PCD_PAY_WORK”: “PUSERINFO”,
-    "PCD_HTTP_REFERER" : "http://localhost:3000",
-    "URL" : "https://testcpay.payple.kr/php/auth.php"
-}
- 
-app.js
-/*
- * 가맹점인증 요청 REST
- */
-app.post('/auth', (req, res) => {
- 
-    /* 
-     * process.env.URL
-     * TEST : https://testcpay.payple.kr/php/auth.php
-     * REAL : https://cpay.payple.kr/php/auth.php 
-     */
-    let url = process.env.URL,
-        params = {
-            cst_id  : process.env.CST_ID || '',
-            custKey : process.env.CUST_KEY || '',
-PCD_PAY_WORK : process.env.PCD_PAY_WORK || ''
-        }
- 
- 
-    post(url, JSON.stringify(params), {
-            headers: {
-                'content-type': 'application/json',
-                'referer': process.env.PCD_HTTP_REFERER
+    {
+        "CST_ID" : "test", //발급받은 비밀키. 유출에 주의하시기 바랍니다.
+        "CUST_KEY" : "abcd1234567890",
+        "PCD_PAY_WORK": "AUTHREG",
+        "PCD_PAY_TYPE": "card",
+        "URL" : "https://testcpay.payple.kr/php/auth.php"
+    }
+    
+    app.js
+    /*
+    * 가맹점인증 요청 REST
+    */
+    app.post('/auth', (req, res) => {
+    
+        /* 
+        * process.env.URL
+        * TEST : https://testcpay.payple.kr/php/auth.php
+        * REAL : https://cpay.payple.kr/php/auth.php 
+        */
+        let url = process.env.URL,
+            params = {
+                cst_id  : process.env.CST_ID || '',
+                custKey : process.env.CUST_KEY || '',
+                PCD_PAY_WORK : process.env.PCD_PAY_WORK || '',
+                PCD_PAY_TYPE : process.env.PCD_PAY_TYPE || ''
             }
-        })
-        .then(r => res.json( {  ...r.data }))
-        .catch(err => console.error(err))
-})
+    
+    
+        post(url, JSON.stringify(params), {
+                headers: {
+                    'content-type': 'application/json'
+                }
+            })
+            .then(r => res.json( {  ...r.data }))
+            .catch(err => console.error(err))
+    })
+
+
 `,
             code_7_1: `
-POST /php/auth.php HTTP/1.1
-Host: testcpay.payple.kr
-Content-Type: application/json
-Cache-Control: no-cache
-{
-  "cst_id": "test",
-  "custKey": "abcd1234567890",
-  “PCD_PAYCHK_FLAG”: “Y”
-}
+/*
+    * TEST : https://testcpay.payple.kr
+    * REAL : https://cpay.payple.kr
+    */
+    POST /php/auth.php HTTP/1.1
+    Host: testcpay.payple.kr
+    Content-Type: application/json
+    Cache-Control: no-cache
+    {
+    "cst_id": "test",
+    "custKey": "abcd1234567890",
+    "PCD_PAY_TYPE": "card",
+    "PCD_PAY_WORK": "AUTHREG"
+    }
 `,
             code_7_2: `
-<?php
-$header_data = array(
-    'Content-Type: application/json',
-    'Cache-Control: no-cache',
-    'referer: http://localhost:8080'
-);
- 
-$data_string = '{
-  "cst_id": "test",
-  "custKey": "abcd1234567890",
-  “PCD_PAYCHK_FLAG”: “Y”
-}';
- 
-$ch = curl_init('https://testcpay.payple.kr/php/auth.php');
-curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch, CURLOPT_SSLVERSION, 4);
-curl_setopt($ch, CURLOPT_HTTPHEADER, $header_data);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
- 
-$response = curl_exec ($ch);
-$status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-echo "status_code:".$status_code." ";
-curl_close ($ch);
-if($status_code == 200) {
-    echo $response;
-} else {
-    echo "Error 내용:".$response;
-}
- 
-?>
+/* 
+    * TEST : https://testcpay.payple.kr/php/auth.php
+    * REAL : https://cpay.payple.kr/php/auth.php 
+    */
+    header("Expires: Mon 26 Jul 1997 05:00:00 GMT");
+    header("Last-Modified: " . gmdate("D, d, M Y H:i:s") . " GMT");
+    header("Cache-Control: no-store, no-cache, must-revalidate");
+    header("Cache-Control: post-check=0; pre-check=0", false);
+    header("Pragma: no-cache");
+    header("Content-type: application/json; charset=utf-8");
+    
+    // 발급받은 비밀키. 유출에 주의하시기 바랍니다.
+    $post_data = array (
+        "cst_id" => "test",
+        "custKey" => "abcd1234567890",
+        "PCD_PAY_TYPE" => "card",
+        "PCD_PAY_WORK": "AUTHREG"
+    );
+    
+    $ch = curl_init('https://testcpay.payple.kr/php/auth.php');
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_SSLVERSION, 4);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($post_data));
+
+    ob_start();
+    $response = curl_exec ($ch);
+    $buffer = ob_get_contents();
+    ob_end_clean();
+
+    $status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    
+    curl_close ($ch);
+    if($status_code == 200) {
+        echo $buffer;
+    }
+
+
 `,
             code_7_3: `
-java
+/* 
+    * TEST : https://testcpay.payple.kr/php/auth.php
+    * REAL : https://cpay.payple.kr/php/auth.php 
+    */
+    @ResponseBody
+    @PostMapping(value = "/auth")
+    public JSONObject payAuth() {
+        JSONObject jsonObject = new JSONObject();
+        JSONParser jsonParser = new JSONParser();
+        try {
+
+            String pURL = "https://testcpay.payple.kr/php/auth.php";
+            // 발급받은 비밀키. 유출에 주의하시기 바랍니다.
+            String cst_id = "test";
+            String cust_key = "abcd1234567890";
+            String PCD_PAY_TYPE = "card";
+            String PCD_PAY_WORK = "AUTHREG";
+
+            JSONObject obj = new JSONObject();
+            obj.put("cst_id", cst_id);
+            obj.put("custKey", cust_key);
+            obj.put("PCD_PAY_TYPE", PCD_PAY_TYPE);
+            obj.put("PCD_PAY_WORK", PCD_PAY_WORK);
+
+            URL url = new URL(pURL);
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+
+            con.setRequestMethod("POST");
+            con.setRequestProperty("content-type", "application/json");
+            con.setDoOutput(true);
+
+            DataOutputStream wr = new DataOutputStream(con.getOutputStream());
+            wr.writeBytes(obj.toString());
+            wr.flush();
+            wr.close();
+
+            int responseCode = con.getResponseCode();
+            BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+            String inputLine;
+            StringBuffer response = new StringBuffer();
+
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
+            }
+
+            in.close();
+
+            // System.out.println("HTTP 응답 코드 : " + responseCode);
+            // System.out.println("HTTP Body : " + response.toString());
+
+            jsonObject = (JSONObject) jsonParser.parse(response.toString());
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return jsonObject;
+    }
+
+
 `,
             code_7_4: `
 .env.json
-{
-    "CST_ID" : "test",
-    "CUST_KEY" : "abcd1234567890",
-    “PCD_PAYCHK_FLAG”: “Y”,
-    "PCD_HTTP_REFERER" : "http://localhost:3000",
-    "URL" : "https://testcpay.payple.kr/php/auth.php"
-}
- 
-app.js
-/*
- * 가맹점인증 요청 REST
- */
-app.post('/auth', (req, res) => {
- 
-    /* 
-     * process.env.URL
-     * TEST : https://testcpay.payple.kr/php/auth.php
-     * REAL : https://cpay.payple.kr/php/auth.php 
-     */
-    let url = process.env.URL,
-        params = {
-            cst_id  : process.env.CST_ID || '',
-            custKey : process.env.CUST_KEY || '',
-PCD_PAYCHK_FLAG : process.env.PCD_PAYCHK_FLAG || ''
-        }
- 
- 
-    post(url, JSON.stringify(params), {
-            headers: {
-                'content-type': 'application/json',
-                'referer': process.env.PCD_HTTP_REFERER
+    {
+        "CST_ID" : "test", //발급받은 비밀키. 유출에 주의하시기 바랍니다.
+        "CUST_KEY" : "abcd1234567890",
+        "PCD_PAY_WORK": "AUTHREG",
+        "PCD_PAY_TYPE": "card",
+        "URL" : "https://testcpay.payple.kr/php/auth.php"
+    }
+    
+    app.js
+    /*
+    * 가맹점인증 요청 REST
+    */
+    app.post('/auth', (req, res) => {
+    
+        /* 
+        * process.env.URL
+        * TEST : https://testcpay.payple.kr/php/auth.php
+        * REAL : https://cpay.payple.kr/php/auth.php 
+        */
+        let url = process.env.URL,
+            params = {
+                cst_id  : process.env.CST_ID || '',
+                custKey : process.env.CUST_KEY || '',
+                PCD_PAY_WORK : process.env.PCD_PAY_WORK || '',
+                PCD_PAY_TYPE : process.env.PCD_PAY_TYPE || ''
             }
-        })
-        .then(r => res.json( {  ...r.data }))
-        .catch(err => console.error(err))
-})
+    
+    
+        post(url, JSON.stringify(params), {
+                headers: {
+                    'content-type': 'application/json'
+                }
+            })
+            .then(r => res.json( {  ...r.data }))
+            .catch(err => console.error(err))
+    })
+
+
 `,
             code_8_1: `
 {
@@ -2110,79 +2796,146 @@ PCD_PAYCHK_FLAG : process.env.PCD_PAYCHK_FLAG || ''
 }
 `,
             code_8_2: `
-<?php
-$header_data = array(
-    'Content-Type: application/json',
-    'Cache-Control: no-cache',
-    'referer: http://localhost:8080'
-);
- 
-$data_string = '{
-  "cst_id": "test",
-  "custKey": "abcd1234567890",
-  “PCD_PAYCHK_FLAG”: “Y”
-}';
- 
-$ch = curl_init('https://testcpay.payple.kr/php/auth.php');
-curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch, CURLOPT_SSLVERSION, 4);
-curl_setopt($ch, CURLOPT_HTTPHEADER, $header_data);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
- 
-$response = curl_exec ($ch);
-$status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-echo "status_code:".$status_code." ";
-curl_close ($ch);
-if($status_code == 200) {
-    echo $response;
-} else {
-    echo "Error 내용:".$response;
-}
- 
-?>
+/* 
+    * TEST : https://testcpay.payple.kr/php/auth.php
+    * REAL : https://cpay.payple.kr/php/auth.php 
+    */
+    header("Expires: Mon 26 Jul 1997 05:00:00 GMT");
+    header("Last-Modified: " . gmdate("D, d, M Y H:i:s") . " GMT");
+    header("Cache-Control: no-store, no-cache, must-revalidate");
+    header("Cache-Control: post-check=0; pre-check=0", false);
+    header("Pragma: no-cache");
+    header("Content-type: application/json; charset=utf-8");
+    
+    // 발급받은 비밀키. 유출에 주의하시기 바랍니다.
+    $post_data = array (
+        "cst_id" => "test",
+        "custKey" => "abcd1234567890",
+        "PCD_PAY_TYPE" => "card",
+        "PCD_PAY_WORK": "AUTHREG"
+    );
+    
+    $ch = curl_init('https://testcpay.payple.kr/php/auth.php');
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_SSLVERSION, 4);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($post_data));
+
+    ob_start();
+    $response = curl_exec ($ch);
+    $buffer = ob_get_contents();
+    ob_end_clean();
+
+    $status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    
+    curl_close ($ch);
+    if($status_code == 200) {
+        echo $buffer;
+    }
+
+
 `,
             code_8_3: `
-java
+/* 
+    * TEST : https://testcpay.payple.kr/php/auth.php
+    * REAL : https://cpay.payple.kr/php/auth.php 
+    */
+    @ResponseBody
+    @PostMapping(value = "/auth")
+    public JSONObject payAuth() {
+        JSONObject jsonObject = new JSONObject();
+        JSONParser jsonParser = new JSONParser();
+        try {
+
+            String pURL = "https://testcpay.payple.kr/php/auth.php";
+            // 발급받은 비밀키. 유출에 주의하시기 바랍니다.
+            String cst_id = "test";
+            String cust_key = "abcd1234567890";
+            String PCD_PAY_TYPE = "card";
+            String PCD_PAY_WORK = "AUTHREG";
+
+            JSONObject obj = new JSONObject();
+            obj.put("cst_id", cst_id);
+            obj.put("custKey", cust_key);
+            obj.put("PCD_PAY_TYPE", PCD_PAY_TYPE);
+            obj.put("PCD_PAY_WORK", PCD_PAY_WORK);
+
+            URL url = new URL(pURL);
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+
+            con.setRequestMethod("POST");
+            con.setRequestProperty("content-type", "application/json");
+            con.setDoOutput(true);
+
+            DataOutputStream wr = new DataOutputStream(con.getOutputStream());
+            wr.writeBytes(obj.toString());
+            wr.flush();
+            wr.close();
+
+            int responseCode = con.getResponseCode();
+            BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+            String inputLine;
+            StringBuffer response = new StringBuffer();
+
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
+            }
+
+            in.close();
+
+            // System.out.println("HTTP 응답 코드 : " + responseCode);
+            // System.out.println("HTTP Body : " + response.toString());
+
+            jsonObject = (JSONObject) jsonParser.parse(response.toString());
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return jsonObject;
+    }
+
+
 `,
             code_8_4: `
 .env.json
-{
-    "CST_ID" : "test",
-    "CUST_KEY" : "abcd1234567890",
-    “PCD_PAYCHK_FLAG”: “Y”,
-    "PCD_HTTP_REFERER" : "http://localhost:3000",
-    "URL" : "https://testcpay.payple.kr/php/auth.php"
-}
- 
-app.js
-/*
- * 가맹점인증 요청 REST
- */
-app.post('/auth', (req, res) => {
- 
-    /* 
-     * process.env.URL
-     * TEST : https://testcpay.payple.kr/php/auth.php
-     * REAL : https://cpay.payple.kr/php/auth.php 
-     */
-    let url = process.env.URL,
-        params = {
-            cst_id  : process.env.CST_ID || '',
-            custKey : process.env.CUST_KEY || '',
-PCD_PAYCHK_FLAG : process.env.PCD_PAYCHK_FLAG || ''
-        }
- 
- 
-    post(url, JSON.stringify(params), {
-            headers: {
-                'content-type': 'application/json',
-                'referer': process.env.PCD_HTTP_REFERER
+    {
+        "CST_ID" : "test", //발급받은 비밀키. 유출에 주의하시기 바랍니다.
+        "CUST_KEY" : "abcd1234567890",
+        "PCD_PAY_WORK": "AUTHREG",
+        "PCD_PAY_TYPE": "card",
+        "URL" : "https://testcpay.payple.kr/php/auth.php"
+    }
+    
+    app.js
+    /*
+    * 가맹점인증 요청 REST
+    */
+    app.post('/auth', (req, res) => {
+    
+        /* 
+        * process.env.URL
+        * TEST : https://testcpay.payple.kr/php/auth.php
+        * REAL : https://cpay.payple.kr/php/auth.php 
+        */
+        let url = process.env.URL,
+            params = {
+                cst_id  : process.env.CST_ID || '',
+                custKey : process.env.CUST_KEY || '',
+                PCD_PAY_WORK : process.env.PCD_PAY_WORK || '',
+                PCD_PAY_TYPE : process.env.PCD_PAY_TYPE || ''
             }
-        })
-        .then(r => res.json( {  ...r.data }))
-        .catch(err => console.error(err))
-})
+    
+    
+        post(url, JSON.stringify(params), {
+                headers: {
+                    'content-type': 'application/json'
+                }
+            })
+            .then(r => res.json( {  ...r.data }))
+            .catch(err => console.error(err))
+    })
+
+
 `,
             code_9_1: `
 {

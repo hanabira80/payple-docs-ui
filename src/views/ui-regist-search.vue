@@ -11,14 +11,11 @@
             빌링키(PCD_PAYER_ID)가 제대로 생성되었는지 확인할 수 있는 API입니다.
         </blockquote>
         <v-alert border="left" colored-border type="error" elevation="2" class="mx-4">
-            요청을 위한 선행단계로 가맹점 인증 단계를 거쳐야 합니다. 해당 내용은 이곳에서 확인하실 수 있습니다.
+            요청을 위한 선행단계로 가맹점 인증 단계를 거쳐야 합니다. <br/>
+            등록카드 조회에 필요한 가맹점 인증요청 방법은 <router-link to="/ui/install/auth">이곳</router-link>을 확인해보세요
         </v-alert>
 
         <article class="mb-12">
-            <h2 class="">
-                등록카드 조회 요청 메시지
-            </h2>
-
             <h3 class="pl-4">
                 요청 메시지
             </h3>
@@ -27,10 +24,7 @@
                     <tbody>
                         <tr>
                             <td colspan="1" rowspan="1">
-                                필드명
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                필수
+                                요청변수
                             </td>
                             <td colspan="1" rowspan="1">
                                 타입
@@ -39,18 +33,18 @@
                                 길이
                             </td>
                             <td colspan="1" rowspan="1">
-                                값
+                                필수
                             </td>
                             <td colspan="1" rowspan="1">
                                 설명
+                            </td>
+                            <td colspan="1" rowspan="1">
+                                비고
                             </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 PCD_CST_ID
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                O
                             </td>
                             <td colspan="1" rowspan="1">
                                 String
@@ -59,7 +53,10 @@
                                 255
                             </td>
                             <td colspan="1" rowspan="1">
-                                UFVNNVZpZk4reWo5UFRualUwcGV4dz09
+                                O
+                            </td>
+                            <td colspan="1" rowspan="1">
+                                UFVN...
                             </td>
                             <td colspan="1" rowspan="1">
                                 가맹점 인증 후 리턴 받은 cst_id Token
@@ -70,16 +67,16 @@
                                 PCD_CUST_KEY
                             </td>
                             <td colspan="1" rowspan="1">
-                                O
-                            </td>
-                            <td colspan="1" rowspan="1">
                                 String
                             </td>
                             <td colspan="1" rowspan="1">
                                 255
                             </td>
                             <td colspan="1" rowspan="1">
-                                T3JzRkp5L1FTcEFDa1FQdHo5Um1UZz09
+                                O
+                            </td>
+                            <td colspan="1" rowspan="1">
+                                T3Jz...
                             </td>
                             <td colspan="1" rowspan="1">
                                 가맹점 인증 후 리턴 받은 custKey Token
@@ -90,16 +87,16 @@
                                 PCD_AUTH_KEY
                             </td>
                             <td colspan="1" rowspan="1">
-                                O
-                            </td>
-                            <td colspan="1" rowspan="1">
                                 String
                             </td>
                             <td colspan="1" rowspan="1">
                                 255
                             </td>
                             <td colspan="1" rowspan="1">
-                                a688ccb3555c25cd722483f03e23065c3d0251701ad6da895eb2d830bc06e34d
+                                O
+                            </td>
+                            <td colspan="1" rowspan="1">
+                                a688c...
                             </td>
                             <td colspan="1" rowspan="1">
                                 가맹점 인증 후 리턴 받은 인증 Token
@@ -110,16 +107,16 @@
                                 PCD_PAYER_ID
                             </td>
                             <td colspan="1" rowspan="1">
-                                O
-                            </td>
-                            <td colspan="1" rowspan="1">
                                 String
                             </td>
                             <td colspan="1" rowspan="1">
                                 255
                             </td>
                             <td colspan="1" rowspan="1">
-                                d0toSS9sT084bVJSNThScnFXQm9Gdz09
+                                O
+                            </td>
+                            <td colspan="1" rowspan="1">
+                                d0to...
                             </td>
                             <td colspan="1" rowspan="1">
                                 카드등록 후 리턴받은 빌링키
@@ -129,18 +126,20 @@
                             <td colspan="1" rowspan="1">
                                 PCD_PAYER_NO
                             </td>
-                            <td colspan="1" rowspan="1"></td>
                             <td colspan="1" rowspan="1">
-                                Number
+                                String
                             </td>
                             <td colspan="1" rowspan="1">
-                                255
+                                20
                             </td>
                             <td colspan="1" rowspan="1">
-                                324578
+                                O
                             </td>
                             <td colspan="1" rowspan="1">
-                                사용자 필드, 결과에 그대로 리턴
+                                1234
+                            </td>
+                            <td colspan="1" rowspan="1">
+                                가맹점에서 사용하는 회원번호
                             </td>
                         </tr>
                     </tbody>
@@ -159,23 +158,14 @@
             </v-card>
 
             <h3 class="pl-4">
-                등록카드 조회 응답 메시지
+                응답 메시지
             </h3>
             <v-card class="temp_table ma-4 mb-12">
                 <v-simple-table class="table-hover-disable">
                     <tbody>
                         <tr>
                             <td colspan="1" rowspan="1">
-                                필드명
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                필수
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                타입
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                길이
+                                응답변수
                             </td>
                             <td colspan="1" rowspan="1">
                                 값
@@ -189,15 +179,6 @@
                                 PCD_PAY_RST
                             </td>
                             <td colspan="1" rowspan="1">
-                                O
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                String
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                8
-                            </td>
-                            <td colspan="1" rowspan="1">
                                 success
                             </td>
                             <td colspan="1" rowspan="1">
@@ -207,15 +188,6 @@
                         <tr>
                             <td colspan="1" rowspan="1">
                                 PCD_PAY_CODE
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                O
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                String
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                8
                             </td>
                             <td colspan="1" rowspan="1">
                                 0000
@@ -229,16 +201,7 @@
                                 PCD_PAY_MSG
                             </td>
                             <td colspan="1" rowspan="1">
-                                O
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                String
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                255
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                조회성공
+                                회원조회 성공
                             </td>
                             <td colspan="1" rowspan="1">
                                 요청결과 메시지 (회원조회 성공 등)
@@ -247,15 +210,6 @@
                         <tr>
                             <td colspan="1" rowspan="1">
                                 PCD_PAY_TYPE
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                O
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                String
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                20
                             </td>
                             <td colspan="1" rowspan="1">
                                 card
@@ -269,15 +223,6 @@
                                 PCD_PAY_BANKACCTYPE
                             </td>
                             <td colspan="1" rowspan="1">
-                                O
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                String
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                8
-                            </td>
-                            <td colspan="1" rowspan="1">
                                 개인
                             </td>
                             <td colspan="1" rowspan="1">
@@ -289,16 +234,7 @@
                                 PCD_PAYER_ID
                             </td>
                             <td colspan="1" rowspan="1">
-                                O
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                String
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                255
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                d0toSS9sT084bVJSNThScnFXQm9Gdz09
+                                d0to...
                             </td>
                             <td colspan="1" rowspan="1">
                                 카드등록 후 리턴받은 빌링키
@@ -307,15 +243,6 @@
                         <tr>
                             <td colspan="1" rowspan="1">
                                 PCD_PAYER_NAME
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                O
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                String
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                255
                             </td>
                             <td colspan="1" rowspan="1">
                                 홍길동
@@ -329,16 +256,7 @@
                                 PCD_PAYER_HP
                             </td>
                             <td colspan="1" rowspan="1">
-                                O
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                String
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                255
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                010-****-3333
+                                010- * * * * -5678
                             </td>
                             <td colspan="1" rowspan="1">
                                 결제고객 핸드폰번호
@@ -347,15 +265,6 @@
                         <tr>
                             <td colspan="1" rowspan="1">
                                 PCD_PAY_CARD
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                O
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                String
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                8
                             </td>
                             <td colspan="1" rowspan="1">
                                 0200
@@ -369,16 +278,7 @@
                                 PCD_PAY_CARDNAME
                             </td>
                             <td colspan="1" rowspan="1">
-                                O
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                String
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                255
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                BC 카드
+                                BC카드
                             </td>
                             <td colspan="1" rowspan="1">
                                 카드사명
@@ -389,19 +289,21 @@
                                 PCD_PAY_CARDNUM
                             </td>
                             <td colspan="1" rowspan="1">
-                                O
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                String
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                255
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                1111-****-****-8888
+                                1111- ******** -2222
                             </td>
                             <td colspan="1" rowspan="1">
                                 카드번호
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" rowspan="1">
+                                PCD_PAY_ISTAX
+                            </td>
+                            <td colspan="1" rowspan="1">
+                                Y
+                            </td>
+                            <td colspan="1" rowspan="1">
+                                과세설정 (Default: Y 이며,  과세:Y, 복합과세:Y, 비과세: N)
                             </td>
                         </tr>
                     </tbody>
@@ -419,9 +321,6 @@
                 </Prism>
             </v-card>
         </article>
-        <v-divider class="mb-12"></v-divider>
-
-        
     </div>
 </template>
 
@@ -439,6 +338,7 @@ export default {
     },
     data() {
         return {
+            toolTipShow: false,
             subNavi: [
                 {
                     text: "홈",
@@ -446,48 +346,47 @@ export default {
                     to: "/",
                 },
                 {
-                    text: "카드결제",
-                    disabled: false,
-                    to: "/card/outline",
-                },
-                {
-                    text: "최초결제",
+                    text: "API",
                     disabled: true,
                 },
                 {
-                    text: "결제 창 호출",
+                    text: "등록카드 조회",
                     disabled: true,
                 },
             ],
             code_1_1: `
-POST 가맹점 인증 후 리턴받은 PCD_PAY_URL HTTP/1.1
-Host 가맹점 인증 후 리턴받은 PCD_PAY_HOST
+/* 
+* 카드 조회
+* TEST : https://testcpay.payple.kr
+* REAL : https://cpay.payple.kr
+*/
+POST 가맹점 인증 후 리턴받는 PCD_PAY_URL HTTP/1.1
+Host: 가맹점 인증 후 리턴받는 PCD_PAY_HOST
 Content-Type: application/json
-Referer: http://localhost:8080
-Cache-Control: no-cache	
+Cache-Control: no-cache
 {
-  "PCD_CST_ID" : "가맹점인증 후 리턴받은 cst_id",
-  "PCD_CUST_KEY" : "가맹점인증 후 리턴받은 custKey",
-  "PCD_AUTH_KEY" : "가맹점인증 후 리턴받은 AuthKey", 
-  "PCD_PAYER_ID" : "NS9qNTgzU2xRNHR2RmFBWWFBTWk5UT09",
-  "PCD_PAYER_NO" : "2324"
+   "PCD_CST_ID": "가맹점 인증 후 리턴받은 cst_id",
+   "PCD_CUST_KEY": "가맹점 인증 후 리턴받은 custKey",                        
+   "PCD_AUTH_KEY": "가맹점 인증 후 리턴받은 AuthKey",                        
+   "PCD_PAYER_ID": "d0toSS9sT084bVJSNThScnFXQm9Gdz09", 
+   "PCD_PAYER_NO": 1234                            
 }
 `,
             code_2_1: `
 {
-  "PCD_PAY_RST" => "success",
-  "PCD_PAY_CODE" => "0000",
-  "PCD_PAY_MSG" => "회원조회 성공",
-  "PCD_PAY_TYPE" => "card",
-  "PCD_PAY_BANKACCTYPE" => "개인",
-  "PCD_PAYER_ID" => "d0toSS9sT084bVJSNThScnFXQm9Gdz09",
-  "PCD_PAYER_NAME" => "홍길동",
-  "PCD_PAYER_HP" => "010-****-3333",
-  "PCD_PAY_CARD" => "0200", 
-  "PCD_PAY_CARDNAME" => "BC 카드",
-  "PCD_PAY_CARDNUM" => "1111-****-****-8888",
-  “PCD_PAY_ISTAX” => “Y”
-}	
+   "PCD_PAY_RST": "success",
+   "PCD_PAY_CODE": "0000",
+   "PCD_PAY_MSG": "회원조회 성공",
+   "PCD_PAY_TYPE": "card",
+   "PCD_PAY_BANKACCTYPE": "개인",
+   "PCD_PAYER_ID": "NS9qNTgzU2xRNHR2RmFBWWFBTWk5UT09",
+   "PCD_PAYER_NAME": "홍길동",
+   "PCD_PAYER_HP": "010-****-5678",
+   "PCD_PAY_CARD": "0200",
+   "PCD_PAY_CARDNAME": "BC카드",
+   "PCD_PAY_CARDNUM": "1111-****-****-2222",
+   "PCD_PAY_ISTAX": "Y"
+}
 `,
         };
     },

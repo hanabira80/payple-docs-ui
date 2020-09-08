@@ -38,7 +38,7 @@
                 가맹점 인증요청 프로세스
             </h3>
             <v-card max-width="1000" raised class="pa-2 ma-4 mb-12">
-                <v-img :src="require('../../src/assets/ui-install-outline-2@2x.png')" cover class="grey darken-4 "></v-img>
+                <v-img :src="require('../../src/assets/c-2-3@2x.png')" cover class="grey darken-4 "></v-img>
             </v-card>
 
             <h3 class="pl-4">
@@ -100,13 +100,15 @@
                             <td colspan="1" rowspan="1">
                                 비고
                             </td>
-                            <td colspan="1" rowspan="1">
-                                - 테스트 계정에서는 카드번호, 유효기간 검증만 진행되며, 도메인 검증을 하지 않습니다.   - 테스트시 결제된 건들은 별도로
-                                취소처리하지 않더라도 24시간 내에 자동취소됩니다.
+                            <td colspan="1" rowspan="1" class="text-left">
+                                - 테스트 계정에서는 카드번호, 유효기간 검증만 진행되며, 도메인 검증을 하지 않습니다.<br/>
+                                - 테스트시 결제된 건들은 별도로 취소처리하지 않더라도 24시간 내에 자동취소됩니다.
                             </td>
-                            <td colspan="1" rowspan="1">
-                                - 실제 승인이 진행되며 카드번호, 유효기간, 비밀번호, 생년월일 검증이 진행됩니다. - 페이플에서는 도메인 검증으로 가맹점 인증을
-                                하고 있기 때문에 REFERER가 정상적으로 넘어오지 않을 경우 AUTH0004 에러가 발생하게 됩니다. - 카페24, 가비아 등 서버호스팅 이용 시
+                            <td colspan="1" rowspan="1" class="text-left">
+                                - 실제 승인이 진행되며 카드번호, 유효기간, 비밀번호, 생년월일 검증이 진행됩니다.<br/>
+                                - 페이플에서는 도메인 검증으로 가맹점 인증을 하고 있기 때문에<br/>
+                                REFERER가 정상적으로 넘어오지 않을 경우 AUTH0004 에러가 발생하게 됩니다. <br/>
+                                - 카페24, 가비아 등 서버호스팅 이용 시 <br/>
                                 호스팅사에 페이플 URL(테스트, 운영) 방화벽 오픈을 요청하셔야 할 수 있습니다.
                             </td>
                         </tr>
@@ -114,7 +116,6 @@
                 </v-simple-table>
             </v-card>
         </article>
-        <v-divider class="mb-12"></v-divider>
 
         
     </div>
@@ -264,16 +265,11 @@ Cache-Control: no-cache
                     to: "/",
                 },
                 {
-                    text: "카드결제",
-                    disabled: false,
-                    to: "/card/outline",
-                },
-                {
-                    text: "최초결제",
+                    text: "환경설정",
                     disabled: true,
                 },
                 {
-                    text: "가맹점 인증 요청 개요",
+                    text: "환경설정 개요",
                     disabled: true,
                 },
             ],

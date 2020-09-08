@@ -20,296 +20,185 @@
                             <td colspan="1" rowspan="1">
                                 은행명
                             </td>
-                            <td colspan="1" rowspan="1">
-                                코드
-                            </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 신한카드
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                0100
                             </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 BC 카드
                             </td>
-                            <td colspan="1" rowspan="1">
-                                0200
-                            </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 SC BC
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                0201
                             </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 우리 BC
                             </td>
-                            <td colspan="1" rowspan="1">
-                                0202
-                            </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 경남 BC
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                0203
                             </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 대구 BC
                             </td>
-                            <td colspan="1" rowspan="1">
-                                0204
-                            </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 NH BC
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                0205
                             </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 기업 BC
                             </td>
-                            <td colspan="1" rowspan="1">
-                                0206
-                            </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 부산 BC
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                0207
                             </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 하나 BC
                             </td>
-                            <td colspan="1" rowspan="1">
-                                0208
-                            </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 신한 BC
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                0209
                             </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 국민 BC
                             </td>
-                            <td colspan="1" rowspan="1">
-                                0210
-                            </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 KB국민
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                0300
                             </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 현대카드
                             </td>
-                            <td colspan="1" rowspan="1">
-                                0400
-                            </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 삼성카드
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                0500
                             </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 롯데AMX
                             </td>
-                            <td colspan="1" rowspan="1">
-                                0701
-                            </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 하나카드
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                0600
                             </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 하나(구외환)
                             </td>
-                            <td colspan="1" rowspan="1">
-                                0601
-                            </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 롯데카드
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                0700
                             </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 NH채움
                             </td>
-                            <td colspan="1" rowspan="1">
-                                0800
-                            </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 씨티카드
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                0906
                             </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 우리카드
                             </td>
-                            <td colspan="1" rowspan="1">
-                                0907
-                            </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 광주카드
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                0908
                             </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 전북카드
                             </td>
-                            <td colspan="1" rowspan="1">
-                                0909
-                            </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 제주카드
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                0910
                             </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 수협카드
                             </td>
-                            <td colspan="1" rowspan="1">
-                                0911
-                            </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 신협카드
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                0912
                             </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 새마을금고
                             </td>
-                            <td colspan="1" rowspan="1">
-                                0913
-                            </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 우체국
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                0914
                             </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 저축은행
                             </td>
-                            <td colspan="1" rowspan="1">
-                                0915
-                            </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 KDB산업
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                0916
                             </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 평화카드
                             </td>
-                            <td colspan="1" rowspan="1">
-                                0917
-                            </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 한미
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                0918
                             </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 신세계한미
                             </td>
-                            <td colspan="1" rowspan="1">
-                                0919
-                            </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 케이뱅크
                             </td>
-                            <td colspan="1" rowspan="1">
-                                0921
-                            </td>
                         </tr>
                         <tr>
                             <td colspan="1" rowspan="1">
                                 카카오뱅크체크
-                            </td>
-                            <td colspan="1" rowspan="1">
-                                0922
                             </td>
                         </tr>
                     </tbody>
@@ -324,15 +213,15 @@
                 이로인해 발생할 수 있는 민원을 방지하고자 아래와 같이 알림톡을 고객에게 발송합니다.
             </blockquote>
 
-            <v-card max-width="1000" raised class="pa-2 ma-4 mb-12">
-                <v-img :src="require('../../src/assets/test-1.png')" cover class="grey darken-4 "></v-img>
+            <v-card max-width="400" raised class="pa-2 ma-4 mb-12">
+                <v-img :src="require('../../src/assets/c-13-1.jpg')" cover class="grey darken-4 "></v-img>
             </v-card>
 
             <v-alert border="left" colored-border type="error" elevation="2" class="mx-4">
                 최초 카드 등록 시 카드 유효성 검증을 위해 100원 승인 후 취소가 진행됩니다.
             </v-alert>
 
-            <h2 class="">
+            <h2 class="mt-12">
                 취소정책
             </h2>
             <blockquote class="mb-12 blockquote body-1">
@@ -346,9 +235,6 @@
                 있지 않은 경우에는 취소가 불가합니다.
             </blockquote>
         </article>
-        <v-divider class="mb-12"></v-divider>
-
-        
     </div>
 </template>
 
@@ -366,6 +252,7 @@ export default {
     },
     data() {
         return {
+            toolTipShow: false,
             subNavi: [
                 {
                     text: "홈",
@@ -373,16 +260,11 @@ export default {
                     to: "/",
                 },
                 {
-                    text: "카드결제",
-                    disabled: false,
-                    to: "/card/outline",
-                },
-                {
-                    text: "최초결제",
+                    text: "API",
                     disabled: true,
                 },
                 {
-                    text: "결제 창 호출",
+                    text: "정책",
                     disabled: true,
                 },
             ],
@@ -415,3 +297,4 @@ Cache-Control: no-cache
     },
 };
 </script>
+
