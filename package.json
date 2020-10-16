@@ -7,25 +7,26 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.11.5",
-    "@mdi/js": "^5.5.55",
-    "@mdi/svg": "^5.5.55",
+    "@babel/polyfill": "^7.12.1",
+    "@mdi/js": "^5.7.55",
+    "@mdi/svg": "^5.7.55",
+    "babel-polyfill": "^6.26.0",
     "core-js": "^3.6.5",
-    "prismjs": "^1.21.0",
+    "prismjs": "^1.22.0",
     "vue": "^2.6.12",
-    "vue-code-highlight": "^0.7.5",
+    "vue-code-highlight": "^0.7.6",
     "vue-prism-component": "^1.2.0",
-    "vue-router": "^3.4.3",
-    "vuetify": "^2.3.10",
+    "vue-router": "^3.4.6",
+    "vuetify": "^2.3.14",
     "vuex": "^3.5.1",
-    "yarn": "^1.22.5"
+    "yarn": "^1.22.10"
   },
   "devDependencies": {
     "@mdi/font": "^4.9.95",
-    "@vue/cli-plugin-babel": "^4.5.4",
-    "@vue/cli-plugin-router": "^4.5.4",
-    "@vue/cli-plugin-vuex": "^4.5.4",
-    "@vue/cli-service": "^4.5.4",
+    "@vue/cli-plugin-babel": "^4.5.7",
+    "@vue/cli-plugin-router": "^4.5.7",
+    "@vue/cli-plugin-vuex": "^4.5.7",
+    "@vue/cli-service": "^4.5.7",
     "elliptic": "^6.5.3",
     "hoek": "^6.1.3",
     "vue-cli-plugin-vuetify": "^2.0.7",
@@ -35,5 +36,17 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 10"
-  ]
+  ],
+  "description": "<img src=\"https://www.payple.kr/html/img/common/logo_full.svg\" width=\"200\">",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanabira80/payple-docs-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hanabira80/payple-docs-ui/issues"
+  },
+  "homepage": "https://github.com/hanabira80/payple-docs-ui#readme"
 }

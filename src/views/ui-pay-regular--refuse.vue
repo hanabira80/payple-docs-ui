@@ -421,7 +421,7 @@
                             <td colspan="1" rowspan="1">
                                 필드명
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <!-- <td colspan="1" rowspan="1">
                                 필수
                             </td>
                             <td colspan="1" rowspan="1">
@@ -429,7 +429,7 @@
                             </td>
                             <td colspan="1" rowspan="1">
                                 길이
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 값
                             </td>
@@ -441,7 +441,7 @@
                             <td colspan="1" rowspan="1">
                                 PCD_PAY_RST
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <!-- <td colspan="1" rowspan="1">
                                 O
                             </td>
                             <td colspan="1" rowspan="1">
@@ -449,7 +449,7 @@
                             </td>
                             <td colspan="1" rowspan="1">
                                 8
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 success
                             </td>
@@ -461,7 +461,7 @@
                             <td colspan="1" rowspan="1">
                                 PCD_PAY_CODE
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <!-- <td colspan="1" rowspan="1">
                                 O
                             </td>
                             <td colspan="1" rowspan="1">
@@ -469,7 +469,7 @@
                             </td>
                             <td colspan="1" rowspan="1">
                                 8
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 CDAU0000
                             </td>
@@ -481,7 +481,7 @@
                             <td colspan="1" rowspan="1">
                                 PCD_PAY_MSG
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <!-- <td colspan="1" rowspan="1">
                                 O
                             </td>
                             <td colspan="1" rowspan="1">
@@ -489,7 +489,7 @@
                             </td>
                             <td colspan="1" rowspan="1">
                                 255
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 결제완료
                             </td>
@@ -501,7 +501,7 @@
                             <td colspan="1" rowspan="1">
                                 PCD_PAY_TYPE
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <!-- <td colspan="1" rowspan="1">
                                 O
                             </td>
                             <td colspan="1" rowspan="1">
@@ -509,7 +509,7 @@
                             </td>
                             <td colspan="1" rowspan="1">
                                 20
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 card
                             </td>
@@ -521,7 +521,7 @@
                             <td colspan="1" rowspan="1">
                                 PCD_PAY_OID
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <!-- <td colspan="1" rowspan="1">
                                 O
                             </td>
                             <td colspan="1" rowspan="1">
@@ -529,7 +529,7 @@
                             </td>
                             <td colspan="1" rowspan="1">
                                 255
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 test099942200156938
                             </td>
@@ -541,13 +541,13 @@
                             <td colspan="1" rowspan="1">
                                 PCD_PAYER_NO
                             </td>
-                            <td colspan="1" rowspan="1"></td>
+                            <!-- <td colspan="1" rowspan="1"></td>
                             <td colspan="1" rowspan="1">
                                 Number
                             </td>
                             <td colspan="1" rowspan="1">
                                 20
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 2324
                             </td>
@@ -559,7 +559,7 @@
                             <td colspan="1" rowspan="1">
                                 PCD_PAYER_ID
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <!-- <td colspan="1" rowspan="1">
                                 O
                             </td>
                             <td colspan="1" rowspan="1">
@@ -567,7 +567,7 @@
                             </td>
                             <td colspan="1" rowspan="1">
                                 255
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1" class="white-space-normal word-break-break-all">
                                 d0toSS9sT084bVJSNThScnFXQm9Gdz09
                             </td>
@@ -579,13 +579,13 @@
                             <td colspan="1" rowspan="1">
                                 PCD_PAYER_EMAIL
                             </td>
-                            <td colspan="1" rowspan="1"></td>
+                            <!-- <td colspan="1" rowspan="1"></td>
                             <td colspan="1" rowspan="1">
                                 String
                             </td>
                             <td colspan="1" rowspan="1">
                                 100
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 help@payple.kr
                             </td>
@@ -597,7 +597,7 @@
                             <td colspan="1" rowspan="1">
                                 PCD_PAY_GOODS
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <!-- <td colspan="1" rowspan="1">
                                 O
                             </td>
                             <td colspan="1" rowspan="1">
@@ -605,7 +605,7 @@
                             </td>
                             <td colspan="1" rowspan="1">
                                 2048
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 테스트 상품
                             </td>
@@ -617,7 +617,7 @@
                             <td colspan="1" rowspan="1">
                                 PCD_PAY_TOTAL
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <!-- <td colspan="1" rowspan="1">
                                 O
                             </td>
                             <td colspan="1" rowspan="1">
@@ -625,7 +625,7 @@
                             </td>
                             <td colspan="1" rowspan="1">
                                 20
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 1000
                             </td>
@@ -637,13 +637,13 @@
                             <td colspan="1" rowspan="1">
                                 PCD_PAY_ISTAX
                             </td>
-                            <td colspan="1" rowspan="1"></td>
+                            <!-- <td colspan="1" rowspan="1"></td>
                             <td colspan="1" rowspan="1">
                                 String
                             </td>
                             <td colspan="1" rowspan="1">
                                 1
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 Y
                             </td>
@@ -655,13 +655,13 @@
                             <td colspan="1" rowspan="1">
                                 PCD_PAY_TAXTOTAL
                             </td>
-                            <td colspan="1" rowspan="1"></td>
+                            <!-- <td colspan="1" rowspan="1"></td>
                             <td colspan="1" rowspan="1">
                                 Number
                             </td>
                             <td colspan="1" rowspan="1">
                                 11
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 10
                             </td>
@@ -674,7 +674,7 @@
                             <td colspan="1" rowspan="1">
                                 PCD_PAY_TIME
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <!-- <td colspan="1" rowspan="1">
                                 O
                             </td>
                             <td colspan="1" rowspan="1">
@@ -682,7 +682,7 @@
                             </td>
                             <td colspan="1" rowspan="1">
                                 14
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 20190901140130
                             </td>
@@ -694,7 +694,7 @@
                             <td colspan="1" rowspan="1">
                                 PCD_PAY_CARDNAME
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <!-- <td colspan="1" rowspan="1">
                                 O
                             </td>
                             <td colspan="1" rowspan="1">
@@ -702,7 +702,7 @@
                             </td>
                             <td colspan="1" rowspan="1">
                                 100
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 BC 카드
                             </td>
@@ -714,7 +714,7 @@
                             <td colspan="1" rowspan="1">
                                 PCD_PAY_CARDNUM
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <!-- <td colspan="1" rowspan="1">
                                 O
                             </td>
                             <td colspan="1" rowspan="1">
@@ -722,7 +722,7 @@
                             </td>
                             <td colspan="1" rowspan="1">
                                 16
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 1111********4444
                             </td>
@@ -734,7 +734,7 @@
                             <td colspan="1" rowspan="1">
                                 PCD_PAY_CARDTRADENUM
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <!-- <td colspan="1" rowspan="1">
                                 O
                             </td>
                             <td colspan="1" rowspan="1">
@@ -742,7 +742,7 @@
                             </td>
                             <td colspan="1" rowspan="1">
                                 24
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 2019041413203326920
                             </td>
@@ -754,7 +754,7 @@
                             <td colspan="1" rowspan="1">
                                 PCD_PAY_CARDAUTHNO
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <!-- <td colspan="1" rowspan="1">
                                 O
                             </td>
                             <td colspan="1" rowspan="1">
@@ -762,7 +762,7 @@
                             </td>
                             <td colspan="1" rowspan="1">
                                 128
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 98123445
                             </td>
@@ -774,7 +774,7 @@
                             <td colspan="1" rowspan="1">
                                 PCD_PAY_CARDRECEIPT
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <!-- <td colspan="1" rowspan="1">
                                 O
                             </td>
                             <td colspan="1" rowspan="1">
@@ -782,7 +782,7 @@
                             </td>
                             <td colspan="1" rowspan="1">
                                 1024
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1" class="white-space-normal word-break-break-all">
                                 https://www.danalpay.com/receipt/creditcard/view.aspx?dataType=receipt&amp;cpid=9810030929&amp;data=4UXGrKqvqJlmnhA3i6%2F2Ydp5kFEN8GayK3pIcOTDoFVQcl8J7RWZnLTWaHhMCaQC
                             </td>
@@ -794,7 +794,7 @@
                             <td colspan="1" rowspan="1">
                                 PCD_REGULER_FLAG
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <!-- <td colspan="1" rowspan="1">
                                 O
                             </td>
                             <td colspan="1" rowspan="1">
@@ -802,7 +802,7 @@
                             </td>
                             <td colspan="1" rowspan="1">
                                 1
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 Y
                             </td>
@@ -814,7 +814,7 @@
                             <td colspan="1" rowspan="1">
                                 PCD_PAY_YEAR
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <!-- <td colspan="1" rowspan="1">
                                 O
                             </td>
                             <td colspan="1" rowspan="1">
@@ -822,7 +822,7 @@
                             </td>
                             <td colspan="1" rowspan="1">
                                 4
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 2020
                             </td>
@@ -834,7 +834,7 @@
                             <td colspan="1" rowspan="1">
                                 PCD_PAY_MONTH
                             </td>
-                            <td colspan="1" rowspan="1">
+                            <!-- <td colspan="1" rowspan="1">
                                 O
                             </td>
                             <td colspan="1" rowspan="1">
@@ -842,7 +842,7 @@
                             </td>
                             <td colspan="1" rowspan="1">
                                 2
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 03
                             </td>
@@ -854,13 +854,13 @@
                             <td colspan="1" rowspan="1">
                                 PCD_USER_DEFINE1
                             </td>
-                            <td colspan="1" rowspan="1"></td>
+                            <!-- <td colspan="1" rowspan="1"></td>
                             <td colspan="1" rowspan="1">
                                 String
                             </td>
                             <td colspan="1" rowspan="1">
                                 2048
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 가맹점 입력값1
                             </td>
@@ -872,13 +872,13 @@
                             <td colspan="1" rowspan="1">
                                 PCD_USER_DEFINE2
                             </td>
-                            <td colspan="1" rowspan="1"></td>
+                            <!-- <td colspan="1" rowspan="1"></td>
                             <td colspan="1" rowspan="1">
                                 String
                             </td>
                             <td colspan="1" rowspan="1">
                                 2048
-                            </td>
+                            </td> -->
                             <td colspan="1" rowspan="1">
                                 가맹점 입력값2
                             </td>
@@ -978,29 +978,31 @@ node
 `,
             code_2_1: `
 {
-  "PCD_PAY_RST" => "success",
-  “PCD_PAY_CODE” => “SPCD0000”,
-  "PCD_PAY_MSG" => "결제완료",
-  "PCD_PAY_TYPE" => "card",	
-  "PCD_PAY_OID" => "test201804000001",
-  "PCD_PAYER_NO" => "2324",
-  "PCD_PAYER_ID" => "NS9qNTgzU2xRNHR2RmFBWWFBTWk5UT09",
-  "PCD_PAYER_EMAIL" => "dev@payple.kr",
-  "PCD_PAY_GOODS" => "상품1",	
-  "PCD_PAY_TOTAL" => "1000",
-  “PCD_PAY_ISTAX”: “Y”,
-  “PCD_PAY_TAXTOTAL”: “10”,
-  "PCD_PAY_TIME" => "20180423130201",
-  "PCD_PAY_CARDNANE" => "BC 카드",
-  "PCD_PAY_CARDNUM" => "1111********4444",	
-  "PCD_PAY_CARDTRADENUM" => "201904141320332692022400",
-  “PCD_PAY_CARDAUTHNO” => “98123445”,
-  “PCD_PAY_CARDRECEIPT” => “https://www.danalpay.com/receipt/creditcard/view.aspx?dataType=receipt&cpid=9810030929&data=jq8%2BUmqBzYoCy%2BchBEE….”, 
-  "PCD_REGULER_FLAG" => "Y",
-  "PCD_PAY_YEAR": 2020,
-  "PCD_PAY_MONTH": 03,
-  “PCD_USER_DEFINE1” => “가맹점 사용 필드 1”,	
-  “PCD_USER_DEFINE2” => “가맹점 사용 필드 2”
+    "PCD_PAY_RST" => "success|error",
+    "PCD_PAY_CODE" => "SPCD0000",
+    "PCD_PAY_MSG" => "카드결제완료|카드결제실패",
+    "PCD_PAY_OID" => "test201804000001",
+    "PCD_PAY_TYPE" => "card",
+    "PCD_PAYER_NO" => “”,
+    "PCD_PAYER_ID" => "NS9qNTgzU2xRNHR2RmFBWWFBTWk5UT09",
+    "PCD_PAYER_NAME" => “홍길동”,
+    "PCD_PAYER_HP" => “”,
+    "PCD_PAYER_EMAIL" => “”,
+    "PCD_PAY_YEAR": 2020, 
+    "PCD_PAY_MONTH": 03,
+    "PCD_PAY_GOODS" => “상품1”,
+    "PCD_PAY_TOTAL" => 100,
+    "PCD_PAY_TAXTOTAL" => “”,
+    "PCD_PAY_ISTAX" => “Y”,
+    "PCD_PAY_TIME" => "20200323130201",
+    "PCD_PAY_CARDNAME" => "BC 카드",
+    "PCD_PAY_CARDNUM" => "12345678****1234",
+    "PCD_PAY_CARDTRADENUM" => "201904141320332692022400",
+    "PCD_PAY_CARDAUTHNO" => "98123445",
+    "PCD_PAY_CARDRECEIPT" => "https://www.danalpay..",
+    "PCD_REGULER_FLAG" => “Y’,
+    "PCD_USER_DEFINE1" => $PCD_USER_DEFINE1,
+    "PCD_USER_DEFINE2" => $PCD_USER_DEFINE2
 }
 `,
         };

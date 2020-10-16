@@ -1,3 +1,6 @@
 module.exports = {
-    productionSourceMap: false
+    configureWebpack: {
+        entry: ["babel-polyfill", "./src/main.js"],
+    },
+    productionSourceMap: false,
 };
